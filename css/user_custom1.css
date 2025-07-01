@@ -1,0 +1,806 @@
+/***********************************************/
+/* 株式会社サトー様　スタイル開発 HTML用 　 　 　 */
+/***********************************************/
+/* Copyright(C) 2024 Cybertech corporation     */
+@charset "UTF-8";
+body {
+    font-family: "BIZ UDPゴシック", "メイリオ","ヒラギノ角ゴ ProN W3", "Hiragino Sans", "Roboto", "Segoe UI", "Verdana", "Arial", sans-serif;
+    color: #000;
+    font-size: 16px;
+    line-height: 1.6;
+} 
+/* 　　　　　　　　　　 */
+/* コンテンツのスタイル */
+/* 　　　　　　　　　　 */
+/* トピックタイトル */
+
+h2{
+    font-size: 28px;
+    font-weight: bold;
+    margin: 0 0 0;
+    padding: 0 10px;
+}
+div.row + hr{
+    border-top: 3px solid #007AC9;
+    margin-top: 10px;
+}
+/* 見出し */
+h3{
+    font-size: 22px;
+    font-weight: bold;
+    color: #fff;
+    background-color: #007AC9;
+    margin: 30px 0 20px -10px;
+    padding: 10px;
+    border-radius: 6px;
+}
+h4{
+    font-size: 20px;
+    font-weight: bold;
+    background-color: #E4F3FC;
+    margin: 40px 0 20px -10px;
+    padding: 10px;
+    border-radius: 6px;
+}
+h5{
+    font-size: 18px;
+    font-weight: bold;
+    border-bottom: 2px solid #B8E0F9;
+    padding: 0 10px 10px;
+    margin: 40px 0 20px -10px;
+}
+h2,h3,h4,h5{
+    line-height: 1.4;
+}
+h2,div.row + hr,h3,h4,h5{
+    margin-left: -10px;
+    margin-right: -10px;
+}
+h3 a {
+    color: #2a6496;
+    text-decoration: none;
+}
+p.blockstyle-00{
+    line-height: 1.6;
+}
+
+/* 箇条書き */
+ul li::marker{
+    color: #A0A9AE;
+}
+ul ul{
+    padding-left: 2em;
+}
+ul ol li::marker {
+    color: #000;
+}
+ul li .information_box ul {
+    list-style-type: disc;
+}
+ul li .information_box ul ul {
+    list-style-type: circle;
+}
+ul li .information_box ul ul ul {
+    list-style-type: disc;
+}
+.procedure div.information_box ul li ul li {
+    list-style-type: circle;
+}
+/* インフォメーション */
+.information_box{/* 親 */
+    display: flex;
+    padding: clamp(10px, 3%, 20px);
+    border-radius: 4px;
+    margin: 10px 0;
+}
+.warning{
+    border: 2px solid #D1214B;
+    background-color: rgba(209,33,75,0.07);
+}
+.caution{
+    border: 1px solid #A0A9AE;
+    background-color: #fff;
+}
+.key{
+    border: 1px solid rgba(209,33,75,0.5);
+    background-color: #fff;
+}
+.note{}
+p.blockstyle-00.information_icon{/* 子１ */
+    margin-top: 0;
+    flex-shrink: 0;
+    margin-right: 20px;
+    width: 16px;
+    height: auto;
+}
+.information_list{/* 子２ */
+}
+.information_list ul{
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 1em;
+}
+/* 手順 */
+.procedure ol li{
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 0.5em;
+}
+.procedure ol li::marker{
+    font-size: 24px;
+    font-weight: bold;
+    color: #007AC9;
+}
+.procedure ol li p{
+    font-weight: initial;
+    margin-top: 0;
+    font-size: 16px;
+}
+/* サブ手順 */
+.procedure ol ol{
+    padding-left: 0;
+    margin-top: 0.5em;
+}
+.procedure ol ol li{
+    font-size: 16px;
+    font-weight: initial;
+    margin-bottom: 0;
+	list-style-type: none;
+	counter-increment: cntabc;
+    text-indent: -25px;
+    padding-left: 23px;
+}
+.procedure ol ol li::before {
+	content: counter(cntabc) ") ";
+    font-size: 16px;
+    font-weight: initial;
+    color: #000;
+}
+/* 手順の入れ子のバリエーション */
+span.font-weight-normal{/*brで改行後の文章がある場合*/
+    font-weight: initial;
+    font-size: 16px;
+}
+.procedure div.information_box li{/*インフォメーションを入れ子にした場合*/
+    font-weight: initial;
+    list-style-type: initial;
+    margin-bottom: 0;
+    font-size: 16px;
+}
+.procedure div.information_box li::marker{
+    font-size: initial;
+    font-weight: initial;
+    color: #A0A9AE;
+}
+/* イラストコールアウト説明 */
+.callout ol{
+    padding-left: 0;
+}
+.callout ol li {
+	list-style-type: none;
+	counter-increment: cnt;
+    text-indent: -1.7em;
+    padding-left: 2em;
+}
+.callout ol li::before {
+	content: "(" counter(cnt) ") ";
+    display: inline-block;
+    width: 22px;
+}
+.callout ol li p{
+    font-weight: initial;
+    text-indent: initial;
+    margin-top: 0;
+}
+.callout_strong ol li {
+    font-weight: bold;
+    text-indent: -22px;
+    padding-left: 33px;
+}
+/* 表 */
+table{
+    font-size: 16px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+/* 表ヘッダー */
+th{
+    font-weight: bold;
+    background-color: #F5F5F5;
+}
+/* 表セル */
+td{
+    background-color: #FFFFFF;
+    word-break: break-all;
+}
+/* 表(共通) */
+th,td{
+    padding: 12px;
+    border: 1px solid #A0A9AE;
+}
+table p.blockstyle-00{
+    margin-top: 0;
+}
+
+.table_indent tbody tr:nth-of-type(2) td:first-of-type{
+    padding-left: 24px;
+}
+.table_indent tbody tr:nth-of-type(3) td:first-of-type{
+    padding-left: 48px;
+}
+
+
+/* 表（スマホ表示は縦に） */
+@media (max-width: 576px) {
+  table.sp_2to1 th, table.sp_2to1 td {
+    display: inline-block;
+    width: 100%;
+    float: left;
+  }
+}
+
+/* 設定メニュー用のスタイル */
+
+div.setting-level1 p.blockstyle-00{
+    color: #007AC9;
+    font-size: 24px;
+    font-weight: bold;
+    margin-top: 5px;
+    letter-spacing: 0.07em;
+  }
+
+div.setting-level2 p.blockstyle-00{
+    margin-left: 40px;
+    width: 520px;
+    margin-top: 1px;
+    margin-bottom: 1px;
+    font-size: 20px;
+    padding: 1px;
+    padding-left: 10px;
+    background-color: #007AC9;
+    color: #ffffff;
+    font-weight: bold;
+    letter-spacing: 0.07em;
+  }
+
+div.setting-level2-no p.blockstyle-00{
+    margin-left: 40px;
+    width: 520px;
+    margin-top: 1px;
+    margin-bottom: 1px;
+    font-size: 20px;
+    padding: 1px;
+    padding-left: 10px;
+    letter-spacing: 0.07em;
+  }
+
+div.setting-level3 p.blockstyle-00{
+    margin-left: 90px;
+    width: 470px;
+    margin-top: 3px;
+    margin-bottom: 1px;
+    font-size: 18px;
+    padding: 1px;
+    padding-left: 10px;
+    background: #E4F3FC;
+    letter-spacing: 0.07em;
+  }
+
+div.setting-level3-no p.blockstyle-00{
+    margin-left: 90px;
+    margin-top: 1px;
+    margin-bottom: 1px;
+    font-size: 18px;
+    padding: 1px;
+    padding-left: 10px;
+    letter-spacing: 0.07em;
+  }
+
+.setting-level4 p.blockstyle-00{
+    margin-left: 140px;
+    margin-top: 3px;
+    width: 420px;
+    margin-bottom: 1px;
+    font-size: 16px;
+    padding: 1px;
+    padding-left: 10px;
+    border-bottom: 4px solid #007AC9;
+    letter-spacing: 0.07em;
+}
+
+div.setting-level4-no p.blockstyle-00{
+    margin-left: 140px;
+    margin-top: 1px;
+    margin-bottom: 1px;
+    font-size: 16px;
+    padding: 1px;
+    padding-left: 10px;
+    letter-spacing: 0.07em;
+  }
+
+div.setting-level5 p.blockstyle-00{
+    margin-left: 190px;
+    margin-top: 1px;
+    width: 370px;
+    margin-bottom: 1px;
+    font-size: 16px;
+    padding: 1px;
+    padding-left: 10px;
+    border-bottom: 4px double #007AC9;
+    letter-spacing: 0.07em;
+  }
+
+div.setting-level5-no p.blockstyle-00{
+    margin-left: 190px;
+    margin-top: 1px;
+    margin-bottom: 1px;
+    font-size: 16px;
+    padding: 1px;
+    padding-left: 10px;
+    letter-spacing: 0.07em;
+  }
+
+div.setting-level6 p.blockstyle-00{
+    margin-left: 240px;
+    margin-top: 1px;
+    margin-bottom: 1px;
+    font-size: 16px;
+    padding: 1px;
+    padding-left: 10px;
+    font-weight: bold;
+    letter-spacing: 0.07em;
+  }
+
+div.setting-level6-no p.blockstyle-00{
+    margin-left: 240px;
+    margin-top: 1px;
+    margin-bottom: 1px;
+    font-size: 16px;
+    padding: 1px;
+    padding-left: 10px;
+    letter-spacing: 0.07em;
+  }
+
+div.setting-level7-no p.blockstyle-00{
+    margin-left: 290px;
+    margin-top: 1px;
+    margin-bottom: 1px;
+    padding: 1px;
+    padding-left: 10px;
+    letter-spacing: 0.07em;
+  } 
+
+
+
+
+/* 上付き文字 */
+sup {
+    top: -0.3em;
+    margin-left: 5px;
+}
+/* テキストリンク*/
+#page-inner a{
+    text-decoration: underline;
+    color: #007AC9;
+}
+#page-inner a:hover{
+    text-decoration: none;
+}
+/* 番号付きリスト・箇条書きリスト*/
+#page-inner ul {
+    padding-left: 1.2em;
+}
+/* 機種名バッジ */
+span.modelname{
+    font-size: 11px;
+    font-weight: bold;
+    background-color: #595757;
+    border-radius: 4px;
+    padding: 5px 8px;
+    margin-top: 0;
+    display: inline-block;
+    color: #fff;
+    margin-right: 4px;
+}
+/* 日本向けの記載 */
+span.japan{
+    font-size: 11px;
+    font-weight: bold;
+    background-color: #04691a;
+    border-radius: 4px;
+    padding: 5px 8px;
+    margin-top: 0;
+    display: inline-block;
+    color: #fff;
+    margin-right: 4px;
+}
+/* 海外向けの記載 */
+span.international{
+    font-size: 11px;
+    font-weight: bold;
+    background-color: #690464;
+    border-radius: 4px;
+    padding: 5px 8px;
+    margin-top: 0;
+    display: inline-block;
+    color: #fff;
+    margin-right: 4px;
+}
+/* 動画 */
+.video_box p{
+    font-size: 16px;
+    font-weight: bold;
+}
+div.video_box .ckeditor-html5-video{
+    text-align: left !important;
+}
+.ckeditor-html5-video{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+/* ステップボックス */
+.step_box{
+    border: 1px solid #A0A9AE;
+    padding: 20px;
+}
+p.step_number{
+    font-weight: bold;
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+p.down{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-align: center;
+    line-height: 0;
+}
+/* 表紙の画像 */
+p.front-cover{
+    text-align: center;
+    margin-top: 60px;
+}
+/* 画像 */
+.img200 {
+    min-width: 200px;
+}
+/* インライン画像 */
+img.inline-image {
+    height: 1em !important;
+    width: auto;
+}
+/* インライン画像 PMXver6.3 */
+img.inline-image svg{
+    height: 1em !important;
+    width: auto;
+}
+/* 注釈（番号付き・番号なし） */
+.note {
+    text-indent: -14px;
+    padding-left: 14px;
+    font-size: 14px;
+}
+.note-no {
+    padding-left: 23px;
+    text-indent: -23px;
+    font-size: 14px;
+    list-style:  none;
+    margin:  0;
+    counter-reset: li_count;
+}
+.note-no li::before  {
+  counter-increment: li_count;
+  content: "*"counter(li_count)"：";
+  color: #428bca;
+}
+/* テーブル */
+.icon_table tr th:first-of-type,
+.icon_table tr td:first-of-type {
+    min-width: 70px;
+}
+/* 改ページ（PDF出力用） */
+div.divblockstyle-06{
+    background-color: transparent;
+}
+/* 　　　　　　　 */
+/* 周囲のスタイル */
+/* 　　　　　　　 */
+/* コンテンツエリア */
+#page-wrapper{
+    margin-left: 400px;
+    /* padding: 20px 30px 0; */
+    padding-top: clamp(10px, 2%, 20px);
+    padding-right: clamp(10px, 3%, 30px);
+    padding-left: clamp(10px, 3%, 30px);
+
+}
+@media screen and (max-width: 763px) {
+    #page-wrapper {
+        margin-left: 0;
+    }
+}
+
+#page-inner{
+    margin: 0;
+    padding: 40px 30px 0;
+}
+
+/* フッター */
+#footer .container .row{
+    text-align: right;
+    font-size: 11px;
+    margin-top: 12.4px;
+}
+/* コンテンツエリアのスクロールバー */
+#page-inner::-webkit-scrollbar {
+    width: 8px;
+}
+#page-inner::-webkit-scrollbar-track {
+    background: #fff;
+}
+#page-inner::-webkit-scrollbar-thumb {
+    background: #B8E0F9;
+    border-radius: 4px;
+}
+/* ヘッダー */
+#page-wrapper {
+    background: #FFFFFF;
+}
+.navbar-cls-top {
+    background: #FFFFFF;
+    border-bottom: 2px #007AC9 solid;
+}
+.pmx-map-title{
+    color: #007AC9 !important;
+    margin-left: auto;
+    font-weight: bold;
+    padding: 13px 20px 0 0 !important;
+}
+div.navbar-header div.pmx-logo {
+    min-height: 50px;
+}
+div.navbar-header {
+    background: url(../img/logo.svg) left no-repeat;
+    background-size: 84px 16px;
+    margin-left: 20px;
+}
+iframe{
+    border: none;
+}
+/* 機種タイトル（ルートマップタイトル） */
+@media(max-width:768px) {
+    .pmx-map-title{
+    float: right !important;
+    }
+}
+@media(max-width:767px) {
+    .pmx-map-title{
+    padding: 0 20px 10px 0 !important;
+    }
+}
+/* サイドナビ */
+.navbar-side{
+    width: 100%;
+    max-width: 400px;
+    background-color: #E4F3FC;
+}
+.navbar-side.open {
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+.sidebar-collapse{
+    border-top: 1px solid #007AC9;
+    font-size: 14px;
+}
+.sidebar-collapse > .nav > li {
+    border-bottom: 1px solid #B8C2C8;
+}
+.sidebar-collapse > .nav > li:first-of-type {
+    border-bottom: none;
+}
+.sidebar-collapse .nav > li.map>a {
+    background-size: 16px;
+    background: url(../img/icon_bullet_right.png) left no-repeat;
+    margin-left: 10px;
+}
+.sidebar-collapse .nav > li.map.active>a {
+    background-size: 16px;
+    background-position-y: 11px;
+    background: url(../img/icon_bullet_down.png) left no-repeat;
+}
+.sidebar-collapse > .nav > li > a {
+    padding: 8.8px 10px 8.8px 16px;
+    padding-left: 2em;
+    text-indent: -1.325em;
+}
+.sidebar-collapse .nav > li > a {
+    color: #000;
+}
+.sidebar-collapse .nav > li > a:hover,
+.sidebar-collapse .nav > li > a:focus {
+	background-color:#E4F3FC;
+}
+a.bookmark-map1 {
+    margin-left: 0;
+    padding-left: 50px;
+}
+.sidebar-collapse .nav > li a.bookmark-topic1 {
+    margin-left: 0;
+    padding-left: 50px;
+}
+.sidebar-collapse .nav > li a.bookmark-topic2 {
+    margin-left: 0;
+    padding-left: 74px;
+}
+.sidebar-collapse .nav > li a.bookmark-topic3 {
+    margin-left: 0;
+    padding-left: 98px;
+}
+.sidebar-collapse .nav > li a.bookmark-topic4 {
+    margin-left: 0;
+    padding-left: 122px;
+}
+.sidebar-collapse .nav > li.thisTopic a {
+    font-weight: bold;
+    color: #0162A1;
+    background-color: #B8E0F9;
+}
+.sidebar-collapse .nav > li a {
+    padding-top: 9px;
+    padding-bottom: 9px;
+    padding-right: 18px;
+}
+.fa.arrow{
+    padding-top: 4px;
+    margin-right: -22px;
+}
+li.active .fa.arrow{
+    margin-right: -20px;
+    position: absolute;
+    top: calc(50% - 8px);
+    right: 20px;
+}
+/* トピック右端アイコン */
+.sidebar-collapse .nav > li.topic a:after{
+    font-family: FontAwesome;
+    content: "\f105";
+    float: right;
+    margin-right: -7px;
+    font-style: normal;
+    font-weight: normal;
+    line-height: 1;
+    color: rgba(0, 0, 0, .75);
+    padding-top: 4px;
+    position: absolute;
+    top: calc(50% - 8px);
+    right: 10px;
+}
+/* サイドナビ領域全体のスクロールバー */
+.navbar-side::-webkit-scrollbar {
+    display: block;
+}
+.navbar-side:hover::-webkit-scrollbar {
+    display: block;
+}
+.navbar-side::-webkit-scrollbar {
+    width: 8px;
+}
+.navbar-side::-webkit-scrollbar-track {
+    background: #E4F3FC;
+}
+.navbar-side::-webkit-scrollbar-thumb {
+    background: #B8E0F9;
+    border-radius: 4px;
+}
+/* タブ */
+#tab{
+    margin-left: 26px !important;
+    margin-top:-2px;
+}
+.tabs li {
+    background-color: #B8C2C8;
+    width: 129px;
+    -webkit-border-top-left-radius: 5px;
+    -webkit-border-top-right-radius: 5px;
+    margin-left: 3px;
+    border: none;
+}
+.tabs li.select {
+    background-color: #007AC9;
+}
+/* 検索 */
+.search{
+    border-top: 1px solid #007AC9;
+}
+input#searchTextbox {
+    margin-top: 20px;
+    margin-left: 10px;
+    width: 95% !important;
+    max-width: 380px;
+    height: 30px;
+    font-size: 14px;
+    color: #595757;
+    background-color: #fff;
+    border: 1px solid #B8C2C8;
+    border-radius: 5px;
+    padding: 4px;
+}
+.sidebar-search {
+    background-color: unset;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+div#id_search_info{
+    color: #000;
+    font-size: 16px;
+    margin: 7.5px 0;
+    padding: 0;
+}
+div#id_search_info span{
+    color: #007AC9 !important;
+    font-weight: bold;
+}
+div#id_search_results {
+    margin-left: 0;
+    border-color: #B8C2C8;
+    background-color: #fff;
+    padding: 0 8px;
+    width: 100%;
+    max-width: 380px;
+    font-size: 12px;
+    line-height: 1.3;
+    border-radius: 5px;
+}
+div#id_search_results div.search_topic_title{
+    padding-top: 12px;
+    padding-bottom: 0.5em;
+    margin-left: -0.3em;
+}
+div#id_search_results div.search_topic_title a {
+    font: inherit;
+    color: #007AC9;
+    font-weight: bold;
+}
+div#id_search_results div.search_topic_summary {
+    margin: 0;
+    padding-bottom: 12px;
+    font: inherit;
+    border-bottom: 1px solid #B8C2C8;
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+}
+span.backA {
+    background-color: #B8E0F9;
+    color: inherit;
+}
+/* 検索結果のスクロールバー */
+div#id_search_results::-webkit-scrollbar {
+    display: none;
+}
+div#id_search_results:hover::-webkit-scrollbar {
+    display: block;
+}
+div#id_search_results::-webkit-scrollbar {
+    width: 8px;
+}
+div#id_search_results::-webkit-scrollbar-track {
+    background: #fff;
+}
+div#id_search_results::-webkit-scrollbar-thumb {
+    background: #B8E0F9;
+    border-radius: 4px;
+}
+
+@media screen and (max-width: 767px) {
+	#footer {
+        position: absolute;
+        right: clamp(30px, 4%, 40px);
+        bottom: 0;
+    }
+    #page-inner{
+        padding: 20px 20px 0;
+    }
+}
+
+#wrapper {
+    background: #FFF;
+}
