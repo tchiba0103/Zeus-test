@@ -1,0 +1,266 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+      <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>互換設定</title>
+    <!-- BOOTSTRAP STYLES-->
+    <link href="css/bootstrap.css?exportDate=20250613" rel="stylesheet" />
+     <!-- FONTAWESOME STYLES-->
+    <link href="css/font-awesome.css?exportDate=20250613" rel="stylesheet" />
+        <!-- CUSTOM STYLES-->
+    <link href="css/custom.css?exportDate=20250613" rel="stylesheet" />
+    <!-- COPYRIGHT STYLES-->
+    <link href="css/copyright.css?exportDate=20250613" rel="stylesheet" />
+    
+     <!-- GOOGLE FONTS-->
+   <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css' />
+   <script>window.MathJax = { MathML: { extensions: ["mml3.js", "content-mathml.js"]}};</script>
+   <script type="text/javascript" async src="https://www.cybertech.co.jp/support/pmxlib/js/MathJax-2.6/MathJax.js?config=MML_HTMLorMML&exportDate=20250613"></script>
+    <link rel="stylesheet" href="css/user_custom1.css" />
+
+    
+</head>
+<body style="overflow-y: hidden;">
+    <div id="page-wrapper">
+        <div id="page-inner">
+            		<div class="row">
+            <div class="col-md-12">
+                <h2 class="title"><span class"pmx-topic-title">互換設定</span></h2>
+            </div>
+        </div>
+        <!-- /. ROW  -->
+        <hr />                    <p class="blockstyle-00"><b>［システム］ &gt; ［互換］ &gt; ［SBPL］</b></p>
+<p class="blockstyle-00"><img id="guid-232f52ce-514e-bb24-29bb-a80583c5de8d" src="img/guid-232f52ce-514e-bb24-29bb-a80583c5de8d.png" align="current" width="" height="" style="" class="illustration img-responsive" alt=""/></p>
+<p class="blockstyle-00"><b>［M-8400］</b></p>
+<p class="blockstyle-00">M-8400プリンタとの互換機能を設定します。</p>
+<div class="information_box caution" style="notselect">
+<p class="blockstyle-00 information_icon"><img src="img/guid-3d841a31-4ced-7a98-c7da-980375142999.png" alt="" title="" class="iconImage img-responsive" style=" " id="guid-3d841a31-4ced-7a98-c7da-980375142999" align="current" width="" height=""/></p>
+<div class="information_list" style="notselect">
+<ul>
+<li>M-8400プリンタとの互換機能の詳細は、弊社営業担当にお問い合わせください。</li>
+<li>本機能を有効にすると、［CODE128(C) ゼロ補填］は自動的に有効になり設定項目が表示されません。</li>
+</ul>
+</div>
+</div>
+<p class="blockstyle-00">初期値： <b>無効</b></p>
+<p class="blockstyle-00"> </p>
+<p class="blockstyle-00"><b>［CODE128(C) ゼロ補填］</b></p>
+<p class="blockstyle-00">CODE128（バーコード指定コマンド）のスタートコードがCの場合に、奇数桁を許容し、印字データの後ろにゼロを補填して印字するかを設定します。</p>
+<p class="blockstyle-00">［M-8400］を有効にすると自動的に有効になり、表示されません。</p>
+<p class="blockstyle-00">無効にすると、奇数行が許容されず、エラーメッセージ1017（［データが不正です］）が表示され、バーコードは印字されません。</p>
+<p class="blockstyle-00">初期値： <b>無効</b></p>
+<p class="blockstyle-00"> </p>
+<p class="blockstyle-00"><b>［漢字コマンド］</b></p>
+<p class="blockstyle-00">受信データに漢字コマンドESC+K5、ESC+K6、ESC+K7が含まれる場合の動作を設定します。</p>
+<p class="blockstyle-00">有効にすると、受信データに含まれる漢字コマンドESC+K5、ESC+K6、ESC+K7を適切なコマンドに変更して印字します。</p>
+<ul>
+<li><p class="blockstyle-00">ESC+K5：16dot x 16dot 全半角混在指定</p>
+</li>
+<li><p class="blockstyle-00">ESC+K6：24dot x 24dot 全半角混在指定</p>
+</li>
+<li><p class="blockstyle-00">ESC+K7：22dot x 22dot 全角指定</p>
+</li>
+</ul>
+<p class="blockstyle-00">無効にすると、受信データに含まれる漢字コマンドESC+K5、ESC+K6、ESC+K7を変更しません。各コマンドを受信したときの本製品の動作は以下のとおりです。</p>
+<ul>
+<li><p class="blockstyle-00">ESC+K5：40dot x 40dot 全角指定で印字します。</p>
+</li>
+<li><p class="blockstyle-00">ESC+K6：エラーメッセージ1017（［データが不正です］）が表示され、データは印字されません。</p>
+</li>
+<li><p class="blockstyle-00">ESC+K7：エラーメッセージ1017（［データが不正です］）が表示され、データは印字されません。</p>
+</li>
+</ul>
+<p class="blockstyle-00">初期値： <b>無効</b></p>
+<p class="blockstyle-00"> </p>
+<p class="blockstyle-00"><b>［Font/Logo呼び出し］</b></p>
+<p class="blockstyle-00">フォント・ロゴを呼出し印字指定コマンド（ESC+RF）で指定する文字コードの処理を設定します。</p>
+<p class="blockstyle-00">有効にすると、リトルエンディアン、無効にすると、ビッグエンディアンで処理します。</p>
+<p class="blockstyle-00">初期値： <b>無効</b></p>
+<p class="blockstyle-00"> </p>
+<p class="blockstyle-00"><b>［A3 コマンド保存］　</b><span class="international" id="">海外</span><br/>基点補正指定コマンドESC+A3で指定されたすべての値（+/-符号の有無にかかわらず）を本製品の［基点補正］に保存するかどうかを設定します。</p>
+<p class="blockstyle-00">有効にすると、基点補正指定コマンドESC+A3で指定されたすべての値（+/-符号の有無にかかわらず）が本製品の［基点補正］に保存されます。</p>
+<p class="blockstyle-00">無効にすると、基点補正指定コマンドESC+A3で指定された+/-符号がない値のみが本製品の［基点補正］に保存されます。</p>
+<p class="blockstyle-00"> </p>
+<p class="blockstyle-00"><b>［PDF417 ECC レベル固定］</b></p>
+<p class="blockstyle-00">PDF417印字指定コマンドで指定されたセキュリティレベルでPDF417コードを印字するかを設定します。</p>
+<p class="blockstyle-00">有効にすると、PDF417印字指定コマンドで指定されたセキュリティレベルで、無効にするとそれ以上のレベルでPDF417コードを印字します。</p>
+<p class="blockstyle-00">初期値： <b>無効</b></p>
+<p class="blockstyle-00"> </p>
+<p class="blockstyle-00"><b>［解説文字重ね印字］</b></p>
+<p class="blockstyle-00">有効にすると、バーコードの解説文字をグラフィックにそのまま重ねて印字します。</p>
+<p class="blockstyle-00">無効にすると、解説文字の各文字の背景を白無地にして印字します。</p>
+<p class="blockstyle-00">初期値： <b>無効</b></p>
+<p class="blockstyle-00"> </p>
+<p class="blockstyle-00"><b>［OCR文字］</b></p>
+<p class="blockstyle-00">有効にすると、旧字体のOCR-Bフォントで、無効にすると、新字体のOCR-Bフォントで印字します。</p>
+<p class="blockstyle-00">初期値： <b>無効</b></p>
+<p class="blockstyle-00"> </p>
+<p class="blockstyle-00"><b>［システム］ &gt; ［互換］ &gt; ［通信設定］</b></p>
+<p class="blockstyle-00"><img id="guid-ab330420-0da4-2a2e-8ee0-a31061030560" src="img/guid-ab330420-0da4-2a2e-8ee0-a31061030560.png" align="current" width="" height="" style="" class="illustration img-responsive" alt=""/></p>
+<p class="blockstyle-00"><b>［有線］ &gt; ［ソケットキャンセル］</b></p>
+<p class="blockstyle-00"><b>［Wi-Fi］ &gt; ［ソケットキャンセル］</b></p>
+<p class="blockstyle-00">有効にすると、本製品がすでにソケット接続済みのときに、他からの接続要求をキャンセルするかを設定します。</p>
+<p class="blockstyle-00">初期値： <b>無効</b></p>
+<p class="blockstyle-00"> </p>
+<p class="blockstyle-00"><b>［ステータス5］</b></p>
+<p class="blockstyle-00">有効にすると、［通信設定］ &gt; ［ネットワーク］ &gt; ［有線］ および［Wi-Fi］内の ［通信プロトコル］ で［ステータス5］が選択できるようになります。</p>
+<p class="blockstyle-00">初期値： <b>無効</b></p>
+<p class="blockstyle-00"> </p>
+<div class="footnote">
+<br clear="all"/><ol/>
+</div>
+
+        </div><!-- /. PAGE INNER  -->
+        <div id="footer"><!--footer-->
+            <div class="container">
+                <div class="row">
+                        <span id="copyright" ></span>
+                </div><!--/row-->
+            </div><!--/container-->
+        </div><!--/footer-->
+    </div>
+</body>
+<script src="js/jquery-3.7.1.min.js"></script>
+<script>
+	var searchStrs = getParam('searchStrs');
+	if(searchStrs != null){
+		searchStrs = searchStrs.split('\\,').join('escapecanma');
+		searchStrs = searchStrs.split(',').join('splitStr');
+		searchStrs = searchStrs.split('escapecanma').join('\\,');
+		$("#page-inner").html(markingColor(searchStrs.split('splitStr'), $("#page-inner").html()))
+	}	resizebody();
+	var param = location.href.split('#')[1];
+	window.location.href = "#" + param;
+	$(window).resize(function () {
+			resizebody();
+	});
+	function resizebody(){
+		var currentWidth = window.innerWidth;
+			if(currentWidth > 768){
+				$("#page-inner").css("height",  $("#page-wrapper").height()-$("#footer").height()-20+ "px");
+			}else{
+				$("#page-inner").css("height",  $("#page-wrapper").height()-$("#footer").height()-20+ "px");
+			}
+	}
+
+ 	window.onload = onLoad;
+
+    function onLoad() {
+   		var filename = "guid-7ef6cebc-202b-ed19-33ea-1da392010fc1_guid-39adb746-d226-345c-7e18-f6c95ea5eeba_guid-8577970f-5ac4-4a00-4944-7f60721707a8_guid-525ad9d0-a0f3-e775-e7ed-1af162d255db_guid-f67299b3-89da-9196-ebe4-d189002fd9ba";
+      	window.parent.postMessage(filename, "*");
+    }
+
+	function markingColor(target2, body){
+		if(!Array.isArray(target2)){
+			return body;
+		}
+		function hiraganaHenkan(searchTarget){
+			return searchTarget.replace(/[ア-ン]/g, function(s) {
+			   return String.fromCharCode(s.charCodeAt(0) - 0x60);
+			})
+		}
+		function katakanaHenkan(searchTarget){
+			return searchTarget.replace(/[あ-ん]/g, function(s) {
+			   return String.fromCharCode(s.charCodeAt(0) + 0x60);
+			})
+		}
+		//テキストのみを配列で取得
+		var nMarkerColor = 0;
+		var strMarkerColor = "";
+		for (var k = 0; k < target2.length; k++) {
+			var bodyStrArray = body.match(/(?<=>).*?(?=<)/g);
+			if(target2[k] != " "){
+				switch (nMarkerColor) {
+					case 0:
+						strMarkerColor = String.fromCharCode(0x2080);
+						break;
+					case 1:
+						strMarkerColor = String.fromCharCode(0x2081);
+						break;
+					case 2:
+						strMarkerColor = String.fromCharCode(0x2082);
+						break;
+					case 3:
+						strMarkerColor = String.fromCharCode(0x2083);
+						break;
+					case 4:
+						strMarkerColor = String.fromCharCode(0x2084);
+						break;
+				}
+
+				var searchTarget = hiraganaHenkan(target2[k]);
+				var targetRegexp = new RegExp(searchTarget,'gi');
+				var searchBody =  hiraganaHenkan(body);
+				var matchList = searchBody.match(targetRegexp);
+				var nonDuplicationlist = matchList.filter(function (x, i, self) {
+					return self.indexOf(x) === i;
+			    });
+				for (var t of nonDuplicationlist) {
+					for(var bodyStr of bodyStrArray){
+						try{
+							if(bodyStr.includes(t)){
+								//テキストに検索文字が入っている場合、テキストの検索文字をハイライト表示に変換してからbodyを置換する
+								var newbodyStr = bodyStr.replaceAll(t,strMarkerColor +  t + String.fromCharCode(0x2085));
+								var regex = new RegExp("(?<=>)" + replaceRegularExpressions(bodyStr) + "(?=<)");
+								body = body.replace(regex, newbodyStr);
+							}
+							var katakana =  katakanaHenkan(t);
+							if(bodyStr.includes(katakana)){
+								//テキストに検索文字のひらがなが入っている場合、テキストの検索文字をハイライト表示に変換してからbodyを置換する
+								var newbodyStr = bodyStr.replaceAll(katakana,strMarkerColor +  katakana + String.fromCharCode(0x2085));
+								var regex = new RegExp("(?<=>)" + replaceRegularExpressions(bodyStr) + "(?=<)");
+								body = body.replace(regex, newbodyStr);
+							}
+						} catch (error) {
+							console.error(error);
+						}
+					}
+				}
+
+
+				nMarkerColor++;
+				if(nMarkerColor > 4){
+					nMarkerColor = 0;
+				}
+
+
+			}
+		}
+		body = body.replace(/\u2080/g, "<span class=\"backA\">");
+		body = body.replace(/\u2081/g, "<span class=\"backB\">");
+		body = body.replace(/\u2082/g, "<span class=\"backC\">");
+		body = body.replace(/\u2083/g, "<span class=\"backD\">");
+		body = body.replace(/\u2084/g, "<span class=\"backE\">");
+		body = body.replace(/\u2085/g, "</span>");
+		return body;
+	}
+	function getParam(name, url) {
+	    if (!url) url = window.location.href;
+	    name = name.replace(/[\[\]]/g, "\\$&");
+	    var regex = new RegExp("[?&]" + name + "(=([^&#]*)|&|#|$)"),
+	        results = regex.exec(url);
+	    if (!results) return null;
+	    if (!results[2]) return '';
+	    return decodeURIComponent(results[2].replace(/\+/g, " "));
+	}
+	function replaceRegularExpressions(targetStr){
+		targetStr = targetStr.replace(/\*/g, "\\*");
+		targetStr = targetStr.replace(/\+/g, "\\+");
+		targetStr = targetStr.replace(/\./g, "\\.");
+		targetStr = targetStr.replace(/\?/g, "\\?");
+		targetStr = targetStr.replace(/\{/g, "\\{");
+		targetStr = targetStr.replace(/\}/g, "\\}");
+		targetStr = targetStr.replace(/\(/g, "\\(");
+		targetStr = targetStr.replace(/\)/g, "\\)");
+		targetStr = targetStr.replace(/\[/g, "\\[");
+		targetStr = targetStr.replace(/\]/g, "\\]");
+		targetStr = targetStr.replace(/\^/g, "\\^");
+		targetStr = targetStr.replace(/\$/g, "\\$");
+		targetStr = targetStr.replace(/\-/g, "\\-");
+		targetStr = targetStr.replace(/\|/g, "\\|");
+		targetStr = targetStr.replace(/\//g, "\\/");
+		return targetStr;
+	}
+</script>
+</html>

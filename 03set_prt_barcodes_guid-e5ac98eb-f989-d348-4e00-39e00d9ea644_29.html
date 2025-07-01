@@ -1,0 +1,441 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+      <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>バーコードの読取りチェック設定</title>
+    <!-- BOOTSTRAP STYLES-->
+    <link href="css/bootstrap.css?exportDate=20250613" rel="stylesheet" />
+     <!-- FONTAWESOME STYLES-->
+    <link href="css/font-awesome.css?exportDate=20250613" rel="stylesheet" />
+        <!-- CUSTOM STYLES-->
+    <link href="css/custom.css?exportDate=20250613" rel="stylesheet" />
+    <!-- COPYRIGHT STYLES-->
+    <link href="css/copyright.css?exportDate=20250613" rel="stylesheet" />
+    
+     <!-- GOOGLE FONTS-->
+   <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css' />
+   <script>window.MathJax = { MathML: { extensions: ["mml3.js", "content-mathml.js"]}};</script>
+   <script type="text/javascript" async src="https://www.cybertech.co.jp/support/pmxlib/js/MathJax-2.6/MathJax.js?config=MML_HTMLorMML&exportDate=20250613"></script>
+    <link rel="stylesheet" href="css/user_custom1.css" />
+
+    
+</head>
+<body style="overflow-y: hidden;">
+    <div id="page-wrapper">
+        <div id="page-inner">
+            		<div class="row">
+            <div class="col-md-12">
+                <h2 class="title"><span class"pmx-topic-title">バーコードの読取りチェック設定</span></h2>
+            </div>
+        </div>
+        <!-- /. ROW  -->
+        <hr />                    <p class="blockstyle-00"><b>［印字］ &gt; ［詳細設定］ &gt; ［バーコードチェッカー］</b></p>
+<p class="blockstyle-00"><img id="guid-982358ff-a481-e1a9-f28b-73f37751516f" src="img/guid-982358ff-a481-e1a9-f28b-73f37751516f.png" align="current" width="" height="" style="" class="illustration img-responsive" alt=""/></p>
+<p class="blockstyle-00">本機能を有効にし、スキャナを接続すると、ラベルに印字したバーコードを確認できます。</p>
+<div class="information_box caution" style="notselect">
+<p class="blockstyle-00 information_icon"><img src="img/guid-87e9ae19-a039-f7f0-c6cf-80bd94e5f479.png" alt="" title="" class="iconImage img-responsive" style=" " id="guid-87e9ae19-a039-f7f0-c6cf-80bd94e5f479" align="current" width="" height=""/></p>
+<div class="information_list" style="notselect">
+<ul>
+<li>ティアオフモードでは使用できません。</li>
+<li>スキャナの取り付けには、バーコードチェッカーマウントキットを使用してください。取り付け方法は、バーコードチェッカーマウントキットに付属の取扱説明書をご覧ください。</li>
+</ul>
+</div>
+</div>
+<p class="blockstyle-00"> </p>
+<p class="blockstyle-00"><b>［モード］</b></p>
+<p class="blockstyle-00">バーコードチェック機能のモードを選択するか、機能を無効にします。</p>
+<p class="blockstyle-00">［読み取りモード］を選択すると、印字したバーコードが読み取れるかをチェックします。スキャナが読み取ったバーコード数と印字データ中のバーコード数が一致するかで判断します。</p>
+<p class="blockstyle-00">スキャナが読み取ったバーコード数が印字データ中のバーコード数に達した場合は、読取り成功と判断します。次のラベルを印字します。<br/><img id="guid-f063e8a0-9a4f-82d6-f015-f21cf53b1f66" src="img/guid-f063e8a0-9a4f-82d6-f015-f21cf53b1f66.svg" align="current" width="" height="" style="" class="illustration img-responsive" alt=""/><br/>*1：スキャナが読み取ったバーコード数が印字データ中のバーコード数より多かったとしても、読取り成功となります。</p>
+<p class="blockstyle-00"> </p>
+<p class="blockstyle-00">［照合モード］を選択すると、印字したバーコードの読取り結果と印字データ中のバーコードデータが一致するかをチェックします。バーコードコマンドで作成したバーコードが対象です。</p>
+<p class="blockstyle-00">印字したバーコードの読取り結果と印字データ中のバーコードデータが一致した場合は、正常と判断します。次のラベルを印字します。<br/><img id="guid-60aa9d46-e3d4-d16b-2d3e-98f9ce9e22a6" src="img/guid-60aa9d46-e3d4-d16b-2d3e-98f9ce9e22a6.svg" align="current" width="" height="" style="" class="illustration img-responsive" alt=""/></p>
+<p class="blockstyle-00">初期値：<b>無効</b></p>
+<p class="blockstyle-00"> </p>
+<p class="blockstyle-00"><b>［バーコードリーダー］</b></p>
+<p class="blockstyle-00">接続したスキャナが表示されます。</p>
+<p class="blockstyle-00"> </p>
+<p class="blockstyle-00"><b>［通信設定］</b></p>
+<p class="blockstyle-00">スキャナとの通信に使用するインタフェースを選択します。</p>
+<p class="blockstyle-00">初期値：<br/>RS-232C接続が有効の場合　<b>［RS-232C］</b><br/>RS-232C接続が無効の場合 <b>［USB］</b></p>
+<p class="blockstyle-00"> </p>
+<p class="blockstyle-00"><b>［読み取りテスト］</b></p>
+<p class="blockstyle-00">接続したスキャナの読取りテストをおこないます。スキャナを接続している場合にのみ使用できます。</p>
+<p class="blockstyle-00"> </p>
+<p class="blockstyle-00"><b>［バーコード数指定方法］</b></p>
+<p class="blockstyle-00">［モード］で［読み取りモード］を選択している場合にのみ表示されます。</p>
+<p class="blockstyle-00">［コマンド］を選択すると、バーコードコマンドで作成したバーコードを読取りチェックの対象とします。</p>
+<p class="blockstyle-00">［設定］を選択すると、バーコードコマンド以外で作成したバーコード（グラフィックデータ、プレ印字されたバーコードなど）を読取りチェックの対象に含めます。</p>
+<p class="blockstyle-00">初期値：<b>［コマンド］</b></p>
+<p class="blockstyle-00"> </p>
+<p class="blockstyle-00"><b>［バーコード数］</b></p>
+<p class="blockstyle-00">［バーコード数指定方法］で［設定］を選択した場合に、1ラベル上のバーコード数を指定します。</p>
+<div class="information_box caution" style="notselect">
+<p class="blockstyle-00 information_icon"><img src="img/guid-87e9ae19-a039-f7f0-c6cf-80bd94e5f479.png" alt="" title="" class="iconImage img-responsive" style=" " id="guid-87e9ae19-a039-f7f0-c6cf-80bd94e5f479" align="current" width="" height=""/></p>
+<div class="information_list" style="notselect">
+<ul>
+<li>［開始位置］を設定して先頭部分のバーコードをチェック対象から除外する場合、除外するバーコードを抜いたバーコード数を指定してください。</li>
+</ul>
+</div>
+</div>
+<p class="blockstyle-00">初期値：<b>1</b></p>
+<p class="blockstyle-00"> </p>
+<p class="blockstyle-00"><b><a class="anchor" id="startpos" name="startpos" title="startpos"></a>［開始位置］</b></p>
+<p class="blockstyle-00">バーコードチェックの開始位置（スキャナの読取り開始位置）を調整します。</p>
+<p class="blockstyle-00">スキャナは、各ラベルが印字開始位置からこの設定で指定した長さを通過してから、読取りを開始します。</p>
+<p class="blockstyle-00">各ラベルに複数のバーコードが印字されている場合に、先頭部分のバーコードをチェック対象から除外したいときなどに利用できます。</p>
+<p class="blockstyle-00"><span class="modelname" id="">CL4-SXR</span></p>
+<ul>
+<li>203dpi：10～<b>72</b>～20000dot</li>
+<li>305dpi：15～<b>108</b>～18000dot</li>
+<li>609dpi：30～<b>216</b>～9600dot</li>
+</ul>
+<p class="blockstyle-00"><span class="modelname" id="">CL6-SXR</span></p>
+<ul>
+<li>203dpi：10～<b>72</b>～20000dot</li>
+<li>305dpi：15～<b>108</b>～18000dot</li>
+</ul>
+<p class="blockstyle-00"> </p>
+<p class="blockstyle-00"><b>［VOID印字］</b></p>
+<p class="blockstyle-00">バーコード読取りエラーまたは照合エラー発生時に、該当ラベルに×マークを印字するかを設定します。</p>
+<p class="blockstyle-00">6×6mmの×マークを、印字データのイメージ幅に、ラベルの終端から最大30mmの長さで印字します。長さは動作モードや印字データのイメージの長さによって変わります（ラベルの終端から最大30mmの位置）。</p>
+<p class="blockstyle-00"><img id="guid-60b76a2f-a8cb-7203-e279-a4e06b203ddb" src="img/guid-60b76a2f-a8cb-7203-e279-a4e06b203ddb.svg" align="current" width="" height="" style="" class="illustration img-responsive" alt=""/></p>
+<p class="blockstyle-00">有効にすると、読取りエラーまたは照合エラー発生時に、本製品は停止せずに、該当のラベルに×マークを印字します。</p>
+<p class="blockstyle-00">VOID印字後は、［リトライ回数］で指定した回数に達するまで同じラベルを発行し、チェックします。指定のリトライ回数に達してもエラーが発生する場合は、VOID印字後に本製品が停止し、エラーメッセージが表示されます。</p>
+<p class="blockstyle-00">無効にすると、読取りエラーまたは照合エラー発生時に、本製品が停止し、エラーメッセージが表示されます。</p>
+<p class="blockstyle-00"> </p>
+<div class="information_box caution" style="notselect">
+<p class="blockstyle-00 information_icon"><img src="img/guid-87e9ae19-a039-f7f0-c6cf-80bd94e5f479.png" alt="" title="" class="iconImage img-responsive" style=" " id="guid-87e9ae19-a039-f7f0-c6cf-80bd94e5f479" align="current" width="" height=""/></p>
+<div class="information_list" style="notselect">
+<ul>
+<li>［動作モード］が［ハクリ］または［ノンセパカッタ］の場合は、本機能を利用できません。</li>
+<li>印字データの長さが8mm未満の場合は、本機能を利用できません。</li>
+<li>［センサタイプ］が［透過］の場合、VOID印字の長さはVOID印字の長さ-4mmとなります。</li>
+<li>［センサタイプ］が［反射］の場合、VOID印字の長さはVOID印字の長さ-1mmとなります。</li>
+<li>VOID印字の長さのバックフィード量は30.0mmです。ただし、チェック対象のラベルに印字されているイメージの長さが30.0mm未満であれば、バックフィード量はそのイメージの長さとなります。</li>
+<li>本機能が有効の場合、カッタ動作でカットしない状態でも照合エラーが発生すると強制的にVOID印字します。</li>
+</ul>
+</div>
+</div>
+<p class="blockstyle-00">初期値：<b>無効</b></p>
+<p class="blockstyle-00"> </p>
+<p class="blockstyle-00"><b>［リトライ回数］</b></p>
+<p class="blockstyle-00">VOID印字したあと、同じバーコードを再発行してチェックする回数を設定します。（0～10回）</p>
+<p class="blockstyle-00">［VOID印字］が有効の場合にのみ表示されます。</p>
+<p class="blockstyle-00"> </p>
+<p class="blockstyle-00">エラーが発生し続けている限り、この設定で指定した回数まで再印字がおこなわれます。</p>
+<p class="blockstyle-00">例えば、0回に設定した場合は、1枚目のチェックでエラーが発生するとVOID印字後に本製品が停止し、エラーメッセージが表示されます。5回に設定した場合は、6枚目のチェックまですべてエラーが発生し続けると、6枚目のVOID印字後に本製品が停止し、エラーメッセージが表示されます。</p>
+<p class="blockstyle-00">初期値：<b>0</b></p>
+<p class="blockstyle-00"> </p>
+<p class="blockstyle-00"><b>［ホスト通知］</b></p>
+<p class="blockstyle-00">バーコードチェック結果を印字データ送信元のホストに返送するかを設定します。</p>
+<p class="blockstyle-00">有効にすると、各ラベルのバーコードチェック結果を以下の内容でホストに返送します。</p>
+<ul>
+<li>チェック成功の場合：&lt;STX&gt;BV,OK&lt;ETX&gt;</li>
+<li>チェック失敗の場合：&lt;STX&gt;BV,NG&lt;ETX&gt;</li>
+</ul>
+<p class="blockstyle-00">初期値：<b>無効</b></p>
+<p class="blockstyle-00"> </p>
+<p class="blockstyle-00"><b>［ログ］</b></p>
+<p class="blockstyle-00">本製品内に保存されたバーコードチェックのログデータを管理します。</p>
+<p class="blockstyle-00">本製品内にバーコードチェックのログデータがある場合にのみ有効になります。</p>
+<p class="blockstyle-00">ログファイルが最大サイズ（1MB）に達すると、古いログデータから新しいログデータに上書きされます。</p>
+<ul>
+<li>［コピー］<br/>バーコードチェックのログデータをUSBメモリにコピーします。<br/>USBメモリを取り付けている場合にのみ有効になります。</li>
+<li>［削除］<br/>バーコードチェックのログデータを削除します。</li>
+</ul>
+<p class="blockstyle-00"> </p>
+<p class="blockstyle-00">バーコードチェックのログデータは以下のフォーマットで作成されます。</p>
+<p class="blockstyle-00"><img id="guid-ab5c4d83-9e84-1b74-47fa-ebf8e67cee89" src="img/guid-ab5c4d83-9e84-1b74-47fa-ebf8e67cee89.svg" align="current" width="" height="" style="" class="illustration img-responsive" alt=""/></p>
+<table cellpadding="0" cellspacing="0" style="">
+<thead>
+<tr>
+<th scope="col">フォーマットID</th>
+<th scope="col">説明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="">YYYY</td>
+<td style="">読取り年</td>
+</tr>
+<tr>
+<td style="">MM</td>
+<td style="">読取り月</td>
+</tr>
+<tr>
+<td style="">DD</td>
+<td style="">読取り日</td>
+</tr>
+<tr>
+<td style="">hh</td>
+<td style="">読取り時</td>
+</tr>
+<tr>
+<td style="">mm</td>
+<td style="">読取り分</td>
+</tr>
+<tr>
+<td style="">ss</td>
+<td style="">読取り秒</td>
+</tr>
+<tr>
+<td style="">ZZZ</td>
+<td style="">タイムゾーン</td>
+</tr>
+<tr>
+<td style="">TTTTTTT</td>
+<td style=""><p class="blockstyle-00">本製品起動時からのラベル総発行枚数</p>
+<div class="information_box caution" style="notselect">
+<p class="blockstyle-00 information_icon"><img src="img/guid-f2c6ea84-5858-2b93-3851-0cad134613e4.png" alt="" title="" class="iconImage img-responsive" style=" " id="guid-f2c6ea84-5858-2b93-3851-0cad134613e4" align="current" width="" height=""/></p>
+<div class="information_list" style="notselect">
+<ul>
+<li>ラベル総発行枚数が8桁以上になった場合は、出力される桁数も増えます。</li>
+</ul>
+</div>
+</div>
+</td>
+</tr>
+<tr>
+<td style="">IR</td>
+<td style=""><p class="blockstyle-00">チェック開始位置に達してから受信した読取りデータ数</p>
+<div class="information_box caution" style="notselect">
+<p class="blockstyle-00 information_icon"><img src="img/guid-f2c6ea84-5858-2b93-3851-0cad134613e4.png" alt="" title="" class="iconImage img-responsive" style=" " id="guid-f2c6ea84-5858-2b93-3851-0cad134613e4" align="current" width="" height=""/></p>
+<div class="information_list" style="notselect">
+<ul>
+<li>チェック結果が「IGNORED」の場合は、「00」となります。</li>
+</ul>
+</div>
+</div>
+</td>
+</tr>
+<tr>
+<td style="">SRSR</td>
+<td style="">読取りデータサイズ（バイト）</td>
+</tr>
+<tr>
+<td style="">drdr...</td>
+<td style="">読取りデータ</td>
+</tr>
+<tr>
+<td style="">RRRRRRR</td>
+<td style=""><p class="blockstyle-00">チェック結果</p>
+<ul>
+<li>SUCCESS<ul>
+<li>読取りモードの場合は常にOKです。</li>
+<li>照合モードの場合は、読取りデータと印字データが一致したことを示しています。</li>
+</ul>
+</li>
+</ul>
+<p class="blockstyle-00"> </p>
+<ul>
+<li>FAILURE<ul>
+<li>読取りモードの場合は、印字されたバーコード分のデータをスキャナが読み取らなかったことを示しています。</li>
+<li>照合モードの場合は、読取りデータと印字データが不一致だったことを示しています。</li>
+</ul>
+</li>
+</ul>
+<p class="blockstyle-00"> </p>
+<ul>
+<li>IGNORED<br/>本製品動作中で、チェック開始～終了の期間以外に読み取ったデータであることを示しています。</li>
+</ul>
+</td>
+</tr>
+<tr>
+<td style="">IC</td>
+<td style=""><p class="blockstyle-00">チェック対象となった印字データ数</p>
+<div class="information_box caution" style="notselect">
+<p class="blockstyle-00 information_icon"><img src="img/guid-f2c6ea84-5858-2b93-3851-0cad134613e4.png" alt="" title="" class="iconImage img-responsive" style=" " id="guid-f2c6ea84-5858-2b93-3851-0cad134613e4" align="current" width="" height=""/></p>
+<div class="information_list" style="notselect">
+<ul>
+<li>チェック結果が「IGNORED」の場合は、「--」となります。</li>
+</ul>
+</div>
+</div>
+</td>
+</tr>
+<tr>
+<td style="">SCSC</td>
+<td style=""><p class="blockstyle-00">印字データサイズ（バイト）</p>
+<div class="information_box caution" style="notselect">
+<p class="blockstyle-00 information_icon"><img src="img/guid-f2c6ea84-5858-2b93-3851-0cad134613e4.png" alt="" title="" class="iconImage img-responsive" style=" " id="guid-f2c6ea84-5858-2b93-3851-0cad134613e4" align="current" width="" height=""/></p>
+<div class="information_list" style="notselect">
+<ul>
+<li>チェック結果が「IGNORED」の場合は、「----」となります。</li>
+</ul>
+</div>
+</div>
+</td>
+</tr>
+<tr>
+<td style="">dcdc...</td>
+<td style=""><p class="blockstyle-00">印字データ</p>
+<div class="information_box caution" style="notselect">
+<p class="blockstyle-00 information_icon"><img src="img/guid-f2c6ea84-5858-2b93-3851-0cad134613e4.png" alt="" title="" class="iconImage img-responsive" style=" " id="guid-f2c6ea84-5858-2b93-3851-0cad134613e4" align="current" width="" height=""/></p>
+<div class="information_list" style="notselect">
+<ul>
+<li>チェック結果が「IGNORED」の場合は、何も出力されません。</li>
+</ul>
+</div>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+<div class="footnote">
+<br clear="all"/><ol/>
+</div>
+
+        </div><!-- /. PAGE INNER  -->
+        <div id="footer"><!--footer-->
+            <div class="container">
+                <div class="row">
+                        <span id="copyright" ></span>
+                </div><!--/row-->
+            </div><!--/container-->
+        </div><!--/footer-->
+    </div>
+</body>
+<script src="js/jquery-3.7.1.min.js"></script>
+<script>
+	var searchStrs = getParam('searchStrs');
+	if(searchStrs != null){
+		searchStrs = searchStrs.split('\\,').join('escapecanma');
+		searchStrs = searchStrs.split(',').join('splitStr');
+		searchStrs = searchStrs.split('escapecanma').join('\\,');
+		$("#page-inner").html(markingColor(searchStrs.split('splitStr'), $("#page-inner").html()))
+	}	resizebody();
+	var param = location.href.split('#')[1];
+	window.location.href = "#" + param;
+	$(window).resize(function () {
+			resizebody();
+	});
+	function resizebody(){
+		var currentWidth = window.innerWidth;
+			if(currentWidth > 768){
+				$("#page-inner").css("height",  $("#page-wrapper").height()-$("#footer").height()-20+ "px");
+			}else{
+				$("#page-inner").css("height",  $("#page-wrapper").height()-$("#footer").height()-20+ "px");
+			}
+	}
+
+ 	window.onload = onLoad;
+
+    function onLoad() {
+   		var filename = "guid-7ef6cebc-202b-ed19-33ea-1da392010fc1_guid-39adb746-d226-345c-7e18-f6c95ea5eeba_guid-0d7fb595-0dad-e5f6-da5d-43a4604b579b_guid-67b7941e-292a-78a4-f327-e1d61cc48b38_guid-e5ac98eb-f989-d348-4e00-39e00d9ea644";
+      	window.parent.postMessage(filename, "*");
+    }
+
+	function markingColor(target2, body){
+		if(!Array.isArray(target2)){
+			return body;
+		}
+		function hiraganaHenkan(searchTarget){
+			return searchTarget.replace(/[ア-ン]/g, function(s) {
+			   return String.fromCharCode(s.charCodeAt(0) - 0x60);
+			})
+		}
+		function katakanaHenkan(searchTarget){
+			return searchTarget.replace(/[あ-ん]/g, function(s) {
+			   return String.fromCharCode(s.charCodeAt(0) + 0x60);
+			})
+		}
+		//テキストのみを配列で取得
+		var nMarkerColor = 0;
+		var strMarkerColor = "";
+		for (var k = 0; k < target2.length; k++) {
+			var bodyStrArray = body.match(/(?<=>).*?(?=<)/g);
+			if(target2[k] != " "){
+				switch (nMarkerColor) {
+					case 0:
+						strMarkerColor = String.fromCharCode(0x2080);
+						break;
+					case 1:
+						strMarkerColor = String.fromCharCode(0x2081);
+						break;
+					case 2:
+						strMarkerColor = String.fromCharCode(0x2082);
+						break;
+					case 3:
+						strMarkerColor = String.fromCharCode(0x2083);
+						break;
+					case 4:
+						strMarkerColor = String.fromCharCode(0x2084);
+						break;
+				}
+
+				var searchTarget = hiraganaHenkan(target2[k]);
+				var targetRegexp = new RegExp(searchTarget,'gi');
+				var searchBody =  hiraganaHenkan(body);
+				var matchList = searchBody.match(targetRegexp);
+				var nonDuplicationlist = matchList.filter(function (x, i, self) {
+					return self.indexOf(x) === i;
+			    });
+				for (var t of nonDuplicationlist) {
+					for(var bodyStr of bodyStrArray){
+						try{
+							if(bodyStr.includes(t)){
+								//テキストに検索文字が入っている場合、テキストの検索文字をハイライト表示に変換してからbodyを置換する
+								var newbodyStr = bodyStr.replaceAll(t,strMarkerColor +  t + String.fromCharCode(0x2085));
+								var regex = new RegExp("(?<=>)" + replaceRegularExpressions(bodyStr) + "(?=<)");
+								body = body.replace(regex, newbodyStr);
+							}
+							var katakana =  katakanaHenkan(t);
+							if(bodyStr.includes(katakana)){
+								//テキストに検索文字のひらがなが入っている場合、テキストの検索文字をハイライト表示に変換してからbodyを置換する
+								var newbodyStr = bodyStr.replaceAll(katakana,strMarkerColor +  katakana + String.fromCharCode(0x2085));
+								var regex = new RegExp("(?<=>)" + replaceRegularExpressions(bodyStr) + "(?=<)");
+								body = body.replace(regex, newbodyStr);
+							}
+						} catch (error) {
+							console.error(error);
+						}
+					}
+				}
+
+
+				nMarkerColor++;
+				if(nMarkerColor > 4){
+					nMarkerColor = 0;
+				}
+
+
+			}
+		}
+		body = body.replace(/\u2080/g, "<span class=\"backA\">");
+		body = body.replace(/\u2081/g, "<span class=\"backB\">");
+		body = body.replace(/\u2082/g, "<span class=\"backC\">");
+		body = body.replace(/\u2083/g, "<span class=\"backD\">");
+		body = body.replace(/\u2084/g, "<span class=\"backE\">");
+		body = body.replace(/\u2085/g, "</span>");
+		return body;
+	}
+	function getParam(name, url) {
+	    if (!url) url = window.location.href;
+	    name = name.replace(/[\[\]]/g, "\\$&");
+	    var regex = new RegExp("[?&]" + name + "(=([^&#]*)|&|#|$)"),
+	        results = regex.exec(url);
+	    if (!results) return null;
+	    if (!results[2]) return '';
+	    return decodeURIComponent(results[2].replace(/\+/g, " "));
+	}
+	function replaceRegularExpressions(targetStr){
+		targetStr = targetStr.replace(/\*/g, "\\*");
+		targetStr = targetStr.replace(/\+/g, "\\+");
+		targetStr = targetStr.replace(/\./g, "\\.");
+		targetStr = targetStr.replace(/\?/g, "\\?");
+		targetStr = targetStr.replace(/\{/g, "\\{");
+		targetStr = targetStr.replace(/\}/g, "\\}");
+		targetStr = targetStr.replace(/\(/g, "\\(");
+		targetStr = targetStr.replace(/\)/g, "\\)");
+		targetStr = targetStr.replace(/\[/g, "\\[");
+		targetStr = targetStr.replace(/\]/g, "\\]");
+		targetStr = targetStr.replace(/\^/g, "\\^");
+		targetStr = targetStr.replace(/\$/g, "\\$");
+		targetStr = targetStr.replace(/\-/g, "\\-");
+		targetStr = targetStr.replace(/\|/g, "\\|");
+		targetStr = targetStr.replace(/\//g, "\\/");
+		return targetStr;
+	}
+</script>
+</html>

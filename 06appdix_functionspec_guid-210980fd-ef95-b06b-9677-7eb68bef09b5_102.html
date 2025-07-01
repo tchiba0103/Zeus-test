@@ -1,0 +1,405 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+      <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>機能仕様</title>
+    <!-- BOOTSTRAP STYLES-->
+    <link href="css/bootstrap.css?exportDate=20250613" rel="stylesheet" />
+     <!-- FONTAWESOME STYLES-->
+    <link href="css/font-awesome.css?exportDate=20250613" rel="stylesheet" />
+        <!-- CUSTOM STYLES-->
+    <link href="css/custom.css?exportDate=20250613" rel="stylesheet" />
+    <!-- COPYRIGHT STYLES-->
+    <link href="css/copyright.css?exportDate=20250613" rel="stylesheet" />
+    
+     <!-- GOOGLE FONTS-->
+   <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css' />
+   <script>window.MathJax = { MathML: { extensions: ["mml3.js", "content-mathml.js"]}};</script>
+   <script type="text/javascript" async src="https://www.cybertech.co.jp/support/pmxlib/js/MathJax-2.6/MathJax.js?config=MML_HTMLorMML&exportDate=20250613"></script>
+    <link rel="stylesheet" href="css/user_custom1.css" />
+
+    
+</head>
+<body style="overflow-y: hidden;">
+    <div id="page-wrapper">
+        <div id="page-inner">
+            		<div class="row">
+            <div class="col-md-12">
+                <h2 class="title"><span class"pmx-topic-title">機能仕様</span></h2>
+            </div>
+        </div>
+        <!-- /. ROW  -->
+        <hr />                    <h3 title="">RFID</h3><h4 title="">RFIDタグの各部名称</h4>
+<p class="blockstyle-00"><img id="guid-f8a1a9eb-f11d-88f1-e737-0458c269f8e5" src="img/guid-f8a1a9eb-f11d-88f1-e737-0458c269f8e5.svg" align="current" width="" height="" style="" class="illustration img-responsive" alt=""/></p>
+<div class="callout" style=" notselect">
+<ol>
+<li class="blockstyle-00" title="通常の段落">用紙送り方向</li>
+<li class="blockstyle-00" title="通常の段落">RFIDタグ/ラベル</li>
+<li class="blockstyle-00" title="通常の段落">推奨される非印字領域<div class="information_box key" style="notselect">
+<p class="blockstyle-00 information_icon"><img src="img/guid-9ba0bf4c-042d-764a-32d4-25d02735610b.png" alt="" title="" class="iconImage img-responsive" style=" " id="guid-9ba0bf4c-042d-764a-32d4-25d02735610b" align="current" width="" height=""/></p>
+<div class="information_list" style="notselect">
+<ul>
+<li>ICチップの上に直接、バーコードや文字を印字することは避けてください。表面が平らでないため、印字品質に悪影響を及ぼします。</li>
+</ul>
+</div>
+</div>
+</li>
+<li>インレイ</li>
+<li>印字対象</li>
+<li>アイマーク</li>
+<li>ギャップ</li>
+<li>ICチップ</li>
+<li>アンテナ</li>
+</ol>
+</div>
+<h4 title="">対応規格</h4><ul>
+<li class="blockstyle-00" title="通常の段落">ISO/IEC 18000-6 Type C Gen2<img src="img/guid-e6f30717-a989-e943-54d3-041f54a52d87.png" alt="" title="" class="iconImage img-responsive" style=" " id="guid-e6f30717-a989-e943-54d3-041f54a52d87" align="current" width="" height=""/></li>
+</ul>
+<p class="blockstyle-00">以下は、CL4-SXRのみ対応</p>
+<ul>
+<li class="blockstyle-00">ISO/IEC 15693<img src="img/guid-62153bab-d424-6d3c-a50c-f7998c36719f.png" alt="" title="" class="iconImage img-responsive" style=" " id="guid-62153bab-d424-6d3c-a50c-f7998c36719f" align="current" width="" height=""/><ul>
+<li class="blockstyle-00">ICODE SLI/SLIX/SLIX-S</li>
+<li class="blockstyle-00">Tag-it HF-I</li>
+<li class="blockstyle-00">my-d</li>
+</ul>
+</li>
+<li class="blockstyle-00">ISO/IEC 14443 Type A<img src="img/guid-62153bab-d424-6d3c-a50c-f7998c36719f.png" alt="" title="" class="iconImage img-responsive" style=" " id="guid-62153bab-d424-6d3c-a50c-f7998c36719f" align="current" width="" height=""/><ul>
+<li class="blockstyle-00">NTAG203</li>
+<li class="blockstyle-00">NTAG210/213/215/216</li>
+<li class="blockstyle-00">MIFARE UltraLight</li>
+<li class="blockstyle-00">MIFARE UltraLight C</li>
+<li class="blockstyle-00">my-d move NFC</li>
+</ul>
+</li>
+<li class="blockstyle-00">ISO/IEC18092<img src="img/guid-62153bab-d424-6d3c-a50c-f7998c36719f.png" alt="" title="" class="iconImage img-responsive" style=" " id="guid-62153bab-d424-6d3c-a50c-f7998c36719f" align="current" width="" height=""/><ul>
+<li class="blockstyle-00">FeliCa Lite-S</li>
+</ul>
+</li>
+</ul>
+<h3 title="">バーコードチェック</h3>
+<p class="blockstyle-00">バーコードチェック機能は、本製品で印字したバーコードの読取り確認をおこない、不正なバーコードを印字したラベルの配布を防止するものです。対応スキャナを本製品に取り付けることにより利用できます。</p>
+<p class="blockstyle-00">バーコードチェック機能の基本仕様は以下のとおりです。</p>
+<h4 title="">対応スキャナ</h4><ul>
+<li>IDEC社製/DATALOGIC社製（USB接続）<ul>
+<li>WB1F-100S1S（バーコード用）</li>
+<li>GFS4170（バーコード用）</li>
+<li>GFS4470（バーコード/2次元コード用）</li>
+</ul>
+</li>
+<li>キーエンス社製（RS-232C接続）<ul>
+<li>BL-1301（バーコード用）</li>
+<li>SR-710（バーコード/2次元コード用）</li>
+</ul>
+</li>
+</ul>
+<p class="blockstyle-00">スキャナ側の設定や対応バーコードについては、スキャナの取扱説明書をご覧ください。</p>
+<h4 title="">対応コマンド</h4>
+<p class="blockstyle-00">SBPL/SZPL/SIPL/STCL/SDPL/SEPL</p>
+<div class="information_box caution" style="notselect">
+<p class="blockstyle-00 information_icon"><img src="img/guid-f9aa281d-7f7c-8e4a-d4cf-db8436e09636.png" alt="" title="" class="iconImage img-responsive" style=" " id="guid-f9aa281d-7f7c-8e4a-d4cf-db8436e09636" align="current" width="" height=""/></p>
+<div class="information_list" style="notselect">
+<ul>
+<li>AEPには対応していません。</li>
+</ul>
+</div>
+</div>
+<h4 title="">対応動作モード</h4>
+<p class="blockstyle-00"><span class="modelname" id="">CL4-SXR</span>［連続発行］/［カッタ］/［印字中カット］/［ハクリ］/［ノンセパカッタ］ </p>
+<p class="blockstyle-00"><span class="modelname" id="">CL6-SXR</span>［連続発行］/［カッタ］/［印字中カット］/［ハクリ］</p>
+<div class="information_box caution" style="notselect">
+<p class="blockstyle-00 information_icon"><img src="img/guid-f9aa281d-7f7c-8e4a-d4cf-db8436e09636.png" alt="" title="" class="iconImage img-responsive" style=" " id="guid-f9aa281d-7f7c-8e4a-d4cf-db8436e09636" align="current" width="" height=""/></p>
+<div class="information_list" style="notselect">
+<ul>
+<li>［ティアオフ］モードでは使用できません。 </li>
+<li>［ハクリ］モードでは、VOID印字を利用できません。</li>
+<li><span class="modelname" id="">CL4-SXR</span> ［ノンセパカッタ］モードでは、VOID印字を利用できません。</li>
+</ul>
+</div>
+</div>
+<h4 title="">印字速度/印字濃度</h4>
+<p class="blockstyle-00" style="" name="" id="">バーコード種やラベルのレイアウトなどの諸条件により、安定した読取りを実現できる印字速度や印字濃度は異なります。事前に読取り確認を十分におこない、設定してください。</p>
+<h4 title="">印字有効範囲（バーコード読取り範囲）の制限事項</h4>
+<p class="blockstyle-00" style="" name="" id="">印字有効範囲（バーコード読取り範囲）は、本製品の仕様に準拠します。ただし、以下の制限があります。</p>
+<ul>
+<li>［連続発行］モード<br/>ラベル後端から11mmの範囲にあるバーコードの読取りはできません。</li>
+<li>［カッタ］モード<br/>以下の範囲にあるバーコードの読取りはできません。<ul>
+<li>毎回カット：ラベル後端から25mm</li>
+<li>枚数指定カット：ラベル後端から44mm</li>
+</ul>
+</li>
+<li>［印字中カット］モード<ul>
+<li>ラベル後端から44mmの範囲にあるバーコードの読取りはできません。</li>
+<li>白抜けが発生するため、以下の範囲に2次元コードまたはシリアルバーコード（用紙送り方向に対して90°または270°の向き）を印字しないでください。<br/><span class="modelname" id="">CL4-SXR</span> ラベル先端（カット位置）から18～23mm<br/><span class="modelname" id="">CL6-SXR</span> ラベル先端（カット位置）から19～25mm</li>
+</ul>
+</li>
+<li><span class="modelname" id="">CL4-SXR</span> ［ノンセパカッタ］モード<br/>ラベル後端から25mmの範囲にあるバーコードの読取りはできません。</li>
+</ul>
+<h4 title="">使用できる用紙サイズ</h4>
+<p class="blockstyle-00" style="" name="" id=""><b>用紙幅</b></p>
+<p class="blockstyle-00" style="" name="" id="">本製品の仕様に準拠します。</p>
+<p class="blockstyle-00" style="" name=""> </p>
+<p class="blockstyle-00" style="" name=""><b>用紙長さ</b><br/>最小サイズが本製品の仕様と異なります。</p>
+<ul>
+<li class="blockstyle-00" name="" style="">［連続発行］モード<br/><span class="modelname" id="">CL4-SXR</span><ul>
+<li class="blockstyle-00" name="" style="">203dpi：20～2497mm（台紙含み23～2500mm）</li>
+<li class="blockstyle-00" name="" style="">305dpi：20～1497mm（台紙含み23～1500mm）</li>
+<li class="blockstyle-00" name="" style="">609dpi：20～397mm（台紙含み23～400mm）</li>
+</ul>
+<span class="modelname" id="">CL6-SXR</span><ul>
+<li class="blockstyle-00" name="" style="">203dpi：20～2497mm（台紙含み23～2500mm）</li>
+<li class="blockstyle-00" name="" style="">305dpi：20～1497mm（台紙含み23～1500mm）</li>
+</ul>
+</li>
+<li class="blockstyle-00" name="" style="">［カッタ］モード（毎回カット）<br/><span class="modelname" id="">CL4-SXR</span><ul>
+<li class="blockstyle-00" name="" style="">203dpi：35～2497mm（台紙含み38～2500mm）</li>
+<li class="blockstyle-00" name="" style="">305dpi：35～1497mm（台紙含み38～1500mm）</li>
+<li class="blockstyle-00" name="" style="">609dpi：35～397mm（台紙含み38～400mm）</li>
+</ul>
+<span class="modelname" id="">CL6-SXR</span><ul>
+<li class="blockstyle-00" name="" style="">203dpi：35～2497mm（台紙含み38～2500mm）</li>
+<li class="blockstyle-00" name="" style="">305dpi：35～1497mm（台紙含み38～1500mm）</li>
+</ul>
+</li>
+<li class="blockstyle-00" name="" style="">［カッタ］モード（枚数指定）/［印字中カット］モード<br/><span class="modelname" id="">CL4-SXR</span><ul>
+<li class="blockstyle-00" name="" style="">203dpi：54～2497mm（台紙含み57～2500mm）</li>
+<li class="blockstyle-00" name="" style="">305dpi：54～1497mm（台紙含み57～1500mm）</li>
+<li class="blockstyle-00" name="" style="">609dpi：54～397mm（台紙含み57～400mm）</li>
+</ul>
+<span class="modelname" id="">CL6-SXR</span><ul>
+<li class="blockstyle-00" name="" style="">203dpi：54～2497mm（台紙含み57～2500mm）</li>
+<li class="blockstyle-00" name="" style="">305dpi：54～1497mm（台紙含み57～1500mm）</li>
+</ul>
+</li>
+<li>［ハクリ］モード<br/>17～397mm（台紙含み20～400mm）<div class="information_box caution" style="notselect">
+<p class="blockstyle-00 information_icon"><img src="img/guid-f9aa281d-7f7c-8e4a-d4cf-db8436e09636.png" alt="" title="" class="iconImage img-responsive" style=" " id="guid-f9aa281d-7f7c-8e4a-d4cf-db8436e09636" align="current" width="" height=""/></p>
+<div class="information_list" style="notselect">
+<ul>
+<li>17～27mmは熱転写方式でのみ使用できます。</li>
+</ul>
+</div>
+</div>
+</li>
+<li><span class="modelname" id="">CL4-SXR</span> ［ノンセパカッタ］モード<br/>38～120mm</li>
+</ul>
+<h4 title="">使用できる用紙種類</h4>
+<p class="blockstyle-00">本製品の仕様に準拠します。ただし、ラベルが銀色やラミネート加工されている場合、スキャナの照射光がラベル面で鏡面反射を起こし、読み取りにくくなります。事前に十分に読取りテストをおこなってください。</p>
+<h4 title="">読取り可能なバーコードの向き</h4>
+<p class="blockstyle-00">視野サイズ内に配置し、事前に十分に読取りテストをおこなってください。</p>
+<p class="blockstyle-00"> </p>
+<p class="blockstyle-00"><b>バーコードスキャナ</b></p>
+<p class="blockstyle-00"><img id="guid-4021dffd-1927-8deb-1243-f9080f38f755" src="img/guid-4021dffd-1927-8deb-1243-f9080f38f755.svg" align="current" width="" height="" style="" class="illustration img-responsive" alt=""/></p>
+<div class="callout" style=" notselect">
+<ol>
+<li class="blockstyle-00" title="通常の段落">用紙送り方向</li>
+</ol>
+</div>
+<p class="blockstyle-00"> </p>
+<p class="blockstyle-00"><b>2次元コードスキャナ</b></p>
+<p class="blockstyle-00"><img id="guid-9af41595-d1e3-10ee-c501-2d22d3c688e1" src="img/guid-9af41595-d1e3-10ee-c501-2d22d3c688e1.svg" align="current" width="" height="" style="" class="illustration img-responsive" alt=""/></p>
+<div class="callout" style=" notselect">
+<ol>
+<li class="blockstyle-00" title="通常の段落">用紙送り方向</li>
+</ol>
+</div>
+<h4 title="">推奨バーコードサイズ</h4>
+<p class="blockstyle-00">各スキャナの仕様に準拠してください。</p>
+<p class="blockstyle-00"> </p>
+<p class="blockstyle-00" style="" name="" id=""><b>バーコード</b><br/>ナローバー0.25mm以上</p>
+<p class="blockstyle-00" style="" name=""><span class="modelname" id="">CL4-SXR</span></p>
+<ul>
+<li>203dpi：2dot以上</li>
+<li>305dpi：3dot以上</li>
+<li>609dpi：6dot以上</li>
+</ul>
+<p class="blockstyle-00" style="" name=""><span class="modelname" id="">CL6-SXR</span></p>
+<ul>
+<li>203dpi：2dot以上</li>
+<li>305dpi：3dot以上</li>
+</ul>
+<p class="blockstyle-00"><b>2次元コード</b><br/>セルサイズ0.25mm以上</p>
+<p class="blockstyle-00"><span class="modelname" id="">CL4-SXR</span></p>
+<ul>
+<li>203dpi：2dot以上</li>
+<li>305dpi：3dot以上</li>
+<li>609dpi：6dot以上</li>
+</ul>
+<p class="blockstyle-00"><span class="modelname" id="">CL6-SXR</span></p>
+<ul>
+<li>203dpi：2dot以上</li>
+<li>305dpi：3dot以上</li>
+</ul>
+<div class="information_box key" style="notselect">
+<p class="blockstyle-00 information_icon"><img src="img/guid-0caaa2b1-06b7-f4ff-2bf8-2ad7a5daa953.png" alt="" title="" class="iconImage img-responsive" style=" " id="guid-0caaa2b1-06b7-f4ff-2bf8-2ad7a5daa953" align="current" width="" height=""/></p>
+<div class="information_list" style="notselect">
+<ul>
+<li>照合モードを使用するには、バーコードはバーコードコマンドを使用して作成してください。グラフィックデータ（BMPイメージなど）、プレ印字されたバーコードなどが読取り範囲にある場合は、正しく機能しません。</li>
+</ul>
+</div>
+</div>
+<p class="blockstyle-00"> </p>
+<div class="information_box caution" style="notselect">
+<p class="blockstyle-00 information_icon"><img src="img/guid-f9aa281d-7f7c-8e4a-d4cf-db8436e09636.png" alt="" title="" class="iconImage img-responsive" style=" " id="guid-f9aa281d-7f7c-8e4a-d4cf-db8436e09636" align="current" width="" height=""/></p>
+<div class="information_list" style="notselect">
+<ul>
+<li>読み取りモードでは、バーコードコマンド以外で作成したバーコード（グラフィックデータ、プレ印字されたバーコードなど）もチェックの対象に含めることができます。その場合は、［バーコード数指定方法］で［設定］を選択し、［バーコード数］で1ラベル上のバーコード数を指定してください。ただし、バーコードコマンド以外で作成したバーコードはスキャナで読み取れずに本モードが正しく機能しない場合があります。</li>
+</ul>
+</div>
+</div>
+<div class="footnote">
+<br clear="all"/><ol/>
+</div>
+
+        </div><!-- /. PAGE INNER  -->
+        <div id="footer"><!--footer-->
+            <div class="container">
+                <div class="row">
+                        <span id="copyright" ></span>
+                </div><!--/row-->
+            </div><!--/container-->
+        </div><!--/footer-->
+    </div>
+</body>
+<script src="js/jquery-3.7.1.min.js"></script>
+<script>
+	var searchStrs = getParam('searchStrs');
+	if(searchStrs != null){
+		searchStrs = searchStrs.split('\\,').join('escapecanma');
+		searchStrs = searchStrs.split(',').join('splitStr');
+		searchStrs = searchStrs.split('escapecanma').join('\\,');
+		$("#page-inner").html(markingColor(searchStrs.split('splitStr'), $("#page-inner").html()))
+	}	resizebody();
+	var param = location.href.split('#')[1];
+	window.location.href = "#" + param;
+	$(window).resize(function () {
+			resizebody();
+	});
+	function resizebody(){
+		var currentWidth = window.innerWidth;
+			if(currentWidth > 768){
+				$("#page-inner").css("height",  $("#page-wrapper").height()-$("#footer").height()-20+ "px");
+			}else{
+				$("#page-inner").css("height",  $("#page-wrapper").height()-$("#footer").height()-20+ "px");
+			}
+	}
+
+ 	window.onload = onLoad;
+
+    function onLoad() {
+   		var filename = "guid-7ef6cebc-202b-ed19-33ea-1da392010fc1_guid-91aa5873-c84b-c9a4-8272-ebd80ccd73a3_guid-210980fd-ef95-b06b-9677-7eb68bef09b5";
+      	window.parent.postMessage(filename, "*");
+    }
+
+	function markingColor(target2, body){
+		if(!Array.isArray(target2)){
+			return body;
+		}
+		function hiraganaHenkan(searchTarget){
+			return searchTarget.replace(/[ア-ン]/g, function(s) {
+			   return String.fromCharCode(s.charCodeAt(0) - 0x60);
+			})
+		}
+		function katakanaHenkan(searchTarget){
+			return searchTarget.replace(/[あ-ん]/g, function(s) {
+			   return String.fromCharCode(s.charCodeAt(0) + 0x60);
+			})
+		}
+		//テキストのみを配列で取得
+		var nMarkerColor = 0;
+		var strMarkerColor = "";
+		for (var k = 0; k < target2.length; k++) {
+			var bodyStrArray = body.match(/(?<=>).*?(?=<)/g);
+			if(target2[k] != " "){
+				switch (nMarkerColor) {
+					case 0:
+						strMarkerColor = String.fromCharCode(0x2080);
+						break;
+					case 1:
+						strMarkerColor = String.fromCharCode(0x2081);
+						break;
+					case 2:
+						strMarkerColor = String.fromCharCode(0x2082);
+						break;
+					case 3:
+						strMarkerColor = String.fromCharCode(0x2083);
+						break;
+					case 4:
+						strMarkerColor = String.fromCharCode(0x2084);
+						break;
+				}
+
+				var searchTarget = hiraganaHenkan(target2[k]);
+				var targetRegexp = new RegExp(searchTarget,'gi');
+				var searchBody =  hiraganaHenkan(body);
+				var matchList = searchBody.match(targetRegexp);
+				var nonDuplicationlist = matchList.filter(function (x, i, self) {
+					return self.indexOf(x) === i;
+			    });
+				for (var t of nonDuplicationlist) {
+					for(var bodyStr of bodyStrArray){
+						try{
+							if(bodyStr.includes(t)){
+								//テキストに検索文字が入っている場合、テキストの検索文字をハイライト表示に変換してからbodyを置換する
+								var newbodyStr = bodyStr.replaceAll(t,strMarkerColor +  t + String.fromCharCode(0x2085));
+								var regex = new RegExp("(?<=>)" + replaceRegularExpressions(bodyStr) + "(?=<)");
+								body = body.replace(regex, newbodyStr);
+							}
+							var katakana =  katakanaHenkan(t);
+							if(bodyStr.includes(katakana)){
+								//テキストに検索文字のひらがなが入っている場合、テキストの検索文字をハイライト表示に変換してからbodyを置換する
+								var newbodyStr = bodyStr.replaceAll(katakana,strMarkerColor +  katakana + String.fromCharCode(0x2085));
+								var regex = new RegExp("(?<=>)" + replaceRegularExpressions(bodyStr) + "(?=<)");
+								body = body.replace(regex, newbodyStr);
+							}
+						} catch (error) {
+							console.error(error);
+						}
+					}
+				}
+
+
+				nMarkerColor++;
+				if(nMarkerColor > 4){
+					nMarkerColor = 0;
+				}
+
+
+			}
+		}
+		body = body.replace(/\u2080/g, "<span class=\"backA\">");
+		body = body.replace(/\u2081/g, "<span class=\"backB\">");
+		body = body.replace(/\u2082/g, "<span class=\"backC\">");
+		body = body.replace(/\u2083/g, "<span class=\"backD\">");
+		body = body.replace(/\u2084/g, "<span class=\"backE\">");
+		body = body.replace(/\u2085/g, "</span>");
+		return body;
+	}
+	function getParam(name, url) {
+	    if (!url) url = window.location.href;
+	    name = name.replace(/[\[\]]/g, "\\$&");
+	    var regex = new RegExp("[?&]" + name + "(=([^&#]*)|&|#|$)"),
+	        results = regex.exec(url);
+	    if (!results) return null;
+	    if (!results[2]) return '';
+	    return decodeURIComponent(results[2].replace(/\+/g, " "));
+	}
+	function replaceRegularExpressions(targetStr){
+		targetStr = targetStr.replace(/\*/g, "\\*");
+		targetStr = targetStr.replace(/\+/g, "\\+");
+		targetStr = targetStr.replace(/\./g, "\\.");
+		targetStr = targetStr.replace(/\?/g, "\\?");
+		targetStr = targetStr.replace(/\{/g, "\\{");
+		targetStr = targetStr.replace(/\}/g, "\\}");
+		targetStr = targetStr.replace(/\(/g, "\\(");
+		targetStr = targetStr.replace(/\)/g, "\\)");
+		targetStr = targetStr.replace(/\[/g, "\\[");
+		targetStr = targetStr.replace(/\]/g, "\\]");
+		targetStr = targetStr.replace(/\^/g, "\\^");
+		targetStr = targetStr.replace(/\$/g, "\\$");
+		targetStr = targetStr.replace(/\-/g, "\\-");
+		targetStr = targetStr.replace(/\|/g, "\\|");
+		targetStr = targetStr.replace(/\//g, "\\/");
+		return targetStr;
+	}
+</script>
+</html>

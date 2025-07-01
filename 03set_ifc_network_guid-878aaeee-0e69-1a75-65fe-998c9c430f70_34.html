@@ -1,0 +1,322 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+      <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ネットワーク設定</title>
+    <!-- BOOTSTRAP STYLES-->
+    <link href="css/bootstrap.css?exportDate=20250613" rel="stylesheet" />
+     <!-- FONTAWESOME STYLES-->
+    <link href="css/font-awesome.css?exportDate=20250613" rel="stylesheet" />
+        <!-- CUSTOM STYLES-->
+    <link href="css/custom.css?exportDate=20250613" rel="stylesheet" />
+    <!-- COPYRIGHT STYLES-->
+    <link href="css/copyright.css?exportDate=20250613" rel="stylesheet" />
+    
+     <!-- GOOGLE FONTS-->
+   <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css' />
+   <script>window.MathJax = { MathML: { extensions: ["mml3.js", "content-mathml.js"]}};</script>
+   <script type="text/javascript" async src="https://www.cybertech.co.jp/support/pmxlib/js/MathJax-2.6/MathJax.js?config=MML_HTMLorMML&exportDate=20250613"></script>
+    <link rel="stylesheet" href="css/user_custom1.css" />
+
+    
+</head>
+<body style="overflow-y: hidden;">
+    <div id="page-wrapper">
+        <div id="page-inner">
+            		<div class="row">
+            <div class="col-md-12">
+                <h2 class="title"><span class"pmx-topic-title">ネットワーク設定</span></h2>
+            </div>
+        </div>
+        <!-- /. ROW  -->
+        <hr />                    <h3 title=""><a class="anchor" id="ipaddress" name="ipaddress" title="ipaddress"></a>IPアドレスを設定する</h3><div class="procedure" style=" notselect">
+<ol>
+<li class="blockstyle-00" title="通常の段落">IPアドレスの割り当て方法を選択します。<br/><span class="font-weight-normal">有線LANの場合： ［ネットワーク］ &gt; ［有線］ &gt; ［IPv4］、または［IPv6］の［モード］<br/>無線LANの場合： ［ネットワーク］ &gt; ［Wi-Fi］ &gt; ［接続設定］ &gt; ［IPv4］、または［IPv6］の［モード］</span><br/><img id="guid-48c60bb1-d1ba-f127-9592-9f6b8d831b89" src="img/guid-48c60bb1-d1ba-f127-9592-9f6b8d831b89.png" align="current" width="" height="" style="" class="illustration img-responsive" alt=""/></li>
+<li class="blockstyle-00" title="通常の段落">［IPアドレス］でIPアドレスを設定、確認します。<br/><span class="font-weight-normal" id="">［モード］で［DHCP］を選択すると、DHCPサーバーから取得したIPアドレスが表示されます。</span><br/><span class="font-weight-normal" id="">［固定アドレス］を選択した場合は、IPアドレスを手動で入力してください。<br/>IPv6使用時に［自動］を選択した場合は、自動でIPアドレスが生成されます。</span><br/><img id="guid-7a7de674-906f-ba3b-268a-451cfc85d2de" src="img/guid-7a7de674-906f-ba3b-268a-451cfc85d2de.png" align="current" width="" height="" style="" class="illustration img-responsive" alt=""/></li>
+</ol>
+</div>
+<div class="information_box caution" style="notselect">
+<p class="blockstyle-00 information_icon"><img src="img/guid-e15d8970-3420-2ba4-05f4-05d8a53ba0c2.png" alt="" title="" class="iconImage img-responsive" style=" " id="guid-e15d8970-3420-2ba4-05f4-05d8a53ba0c2" align="current" width="" height=""/></p>
+<div class="information_list" style="notselect">
+<ul>
+<li>［モード］で［DHCP］を選択している場合には、［リース更新］が表示されます。タップすると、リース期間を更新し、DHCPサーバーからIPアドレスを再度取得します。</li>
+<li>必要に応じて、サブネットマスク、デフォルトゲートウェイ、プレフィックス長、DNSサーバーのアドレスを設定してください。</li>
+<li>DNSサーバーには、最大で3つのIPアドレスを設定できます。IPアドレスはカンマで区切って設定してください。</li>
+</ul>
+</div>
+</div>
+<h3 title=""><a class="anchor" id="ports" name="ports" title="ports"></a>TCP/IPポート番号を設定する</h3>
+<p class="blockstyle-00"><b>［通信設定］ &gt; ［ネットワーク］ &gt; ［有線］ &gt; ［ポート設定］</b></p>
+<p class="blockstyle-00"><b>［通信設定］ &gt; ［ネットワーク］ &gt; ［Wi-Fi］ &gt; ［ポート設定］</b></p>
+<p class="blockstyle-00"><img id="guid-78db5e4a-8b58-8a47-74f0-d284d8833cd1" src="img/guid-78db5e4a-8b58-8a47-74f0-d284d8833cd1.png" align="current" width="" height="" style="" class="illustration img-responsive" alt=""/></p>
+<p class="blockstyle-00">［通信プロトコル］の設定により、表示される項目が異なります。</p>
+<p class="blockstyle-00"> </p>
+<p class="blockstyle-00">ポート1～3に使用するポート番号を指定し、設定をおこないます。</p>
+<p class="blockstyle-00">各ポートの用途は以下のとおりです。</p>
+<ul>
+<li class="blockstyle-00" title="通常の段落">ポート1<br/>STATUS4の2ポート接続時：印字データの受信<br/>STATUS3/ STATUS5の1ポート接続時：印字データの受信とステータス返送</li>
+<li class="blockstyle-00" title="通常の段落">ポート2<br/>STATUS4の2ポート接続時の、ステータス返送</li>
+<li class="blockstyle-00" title="通常の段落">ポート3<br/>STATUS3/ STATUS4/ STATUS5の1ポート接続時の、印字データの受信とステータス返送</li>
+</ul>
+<div class="information_box key" style="notselect">
+<p class="blockstyle-00 information_icon"><img src="img/guid-5d683133-5933-1941-cf78-0fe44ef61103.png" alt="" title="" class="iconImage img-responsive" style=" " id="guid-5d683133-5933-1941-cf78-0fe44ef61103" align="current" width="" height=""/></p>
+<div class="information_list" style="notselect">
+<ul>
+<li>各ポート（1、2、3）は異なる設定値でなければなりません。また、他のサービスで使用していないポート番号を設定してください。正しく通信ができない要因になります。</li>
+<li>［TCP接続待ち］が有効（初期値）の場合は、STATUS3/ STATUS4/ STATUS5の1ポート接続で接続してください。STATUS4の2ポート接続で接続した場合の動作は保証していません。</li>
+</ul>
+</div>
+</div>
+<div class="information_box caution" style="notselect">
+<p class="blockstyle-00 information_icon"><img src="img/guid-e15d8970-3420-2ba4-05f4-05d8a53ba0c2.png" alt="" title="" class="iconImage img-responsive" style=" " id="guid-e15d8970-3420-2ba4-05f4-05d8a53ba0c2" align="current" width="" height=""/></p>
+<div class="information_list" style="notselect">
+<ul>
+<li>［TCP接続待ち］、［Legacy Status設定］、［Status4周期応答間隔］の設定は、通常は変更せずにご使用ください。</li>
+</ul>
+</div>
+</div>
+<h3 title=""><a class="anchor" id="dhcpoption" name="dhcpoption" title="dhcpoption"></a>DHCPオプションを設定する</h3>
+<p class="blockstyle-00"><b>［通信設定］ &gt; ［ネットワーク］ &gt; ［有線］ &gt; ［DHCPオプション］</b></p>
+<p class="blockstyle-00"><b>［通信設定］ &gt; ［ネットワーク］ &gt; ［Wi-Fi］ &gt; ［DHCPオプション］</b></p>
+<p class="blockstyle-00"><img id="guid-c3149da3-6973-4e1d-07ad-e665388c8ac3" src="img/guid-c3149da3-6973-4e1d-07ad-e665388c8ac3.png" align="current" width="" height="" style="" class="illustration img-responsive" alt=""/></p>
+<p class="blockstyle-00">DHCPサーバーオプションの設定をおこないます。</p>
+<p class="blockstyle-00">［IPv4］ &gt; ［モード］、または［IPv6］ &gt; ［モード］で［DHCP］を選択している場合のみ設定できます。</p>
+<div class="information_box caution" style="notselect">
+<p class="blockstyle-00 information_icon"><img src="img/guid-e15d8970-3420-2ba4-05f4-05d8a53ba0c2.png" alt="" title="" class="iconImage img-responsive" style=" " id="guid-e15d8970-3420-2ba4-05f4-05d8a53ba0c2" align="current" width="" height=""/></p>
+<div class="information_list" style="notselect">
+<ul>
+<li>ピリオドは区切り文字としてのみ入力できます。</li>
+<li>［ホスト名］および［ユーザクラス］は、設定を空欄にすると設定自体が無効になります。</li>
+</ul>
+</div>
+</div>
+<h3 title=""><a class="anchor" id="manual" name="manual" title="manual"></a>無線LANの接続設定を手動でおこなう</h3>
+<p class="blockstyle-00"><b>［通信設定］ &gt; ［ネットワーク］ &gt; ［Wi-Fi］ &gt; ［接続設定］ &gt; ［手動設定］</b></p>
+<p class="blockstyle-00"><img id="guid-44a070b7-26b7-21db-3745-aaf1db6e8644" src="img/guid-44a070b7-26b7-21db-3745-aaf1db6e8644.png" align="current" width="" height="" style="" class="illustration img-responsive" alt=""/></p>
+<p class="blockstyle-00">無線LANのSSIDやセキュリティ認証、周波数帯を設定します。</p>
+<p class="blockstyle-00">SSIDは、画面に表示される無線LANネットワークから選択するか、任意で入力することもできます。</p>
+<p class="blockstyle-00">使用する認証方式により表示される項目が異なります。</p>
+<div class="information_box key" style="notselect">
+<p class="blockstyle-00 information_icon"><img src="img/guid-0fbe1fd1-1a56-eb32-2f7d-f920d730a348.png" alt="" title="" class="iconImage img-responsive" style=" " id="guid-0fbe1fd1-1a56-eb32-2f7d-f920d730a348" align="current" width="" height=""/></p>
+<div class="information_list" style="notselect">
+<ul>
+<li>キーインデックスの範囲は、接続する機器によって異なります。接続する機器のキーインデックスの範囲が0～ 3で本製品を「1」に設定した場合は、接続する機器を「0」に設定します。</li>
+</ul>
+</div>
+</div>
+<div class="procedure" style=" notselect">
+<ol/>
+</div>
+<div class="information_box caution" style="notselect">
+<p class="blockstyle-00 information_icon"><img src="img/guid-e15d8970-3420-2ba4-05f4-05d8a53ba0c2.png" alt="" title="" class="iconImage img-responsive" style=" " id="guid-e15d8970-3420-2ba4-05f4-05d8a53ba0c2" align="current" width="" height=""/></p>
+<div class="information_list" style="notselect">
+<ul>
+<li>セキュリティの方式は、本製品、ホスト、ネットワーク機器で一致するように設定してください。</li>
+<li>［周波数帯］で［6GHz］を選択している場合、［セキュリティ］は［WPA3］で固定となります。</li>
+<li>WEPキーの長さによって、［キー1］～［キー4］に設定できる文字数が異なります。<ul>
+<li>キーの長さが64ビットの場合<br/>ASCII：5文字<br/>16進数：10文字</li>
+<li>キーの長さが128ビットの場合<br/>ASCII：13文字<br/>16進数：26文字</li>
+</ul>
+</li>
+<li>［事前共有キー］は、8～63文字のASCII文字、または64桁の16進数で入力します。</li>
+</ul>
+</div>
+</div>
+<h3 title=""><a class="anchor" id="wps" name="wps" title="wps"></a>プッシュボタン・PINコードで無線LAN接続する</h3>
+<p class="blockstyle-00"><b>プッシュボタン方式で接続する場合</b></p>
+<div class="procedure" style=" notselect">
+<ol>
+<li><b>設定画面から［通信設定］&gt; ［ネットワーク］ &gt; ［Wi-Fi］ &gt; ［WPS］ &gt; ［プッシュボタン方式］をタップします。</b><br/><img id="guid-21b2d7a9-14ac-d30c-ca6c-5e29cb29260f" src="img/guid-21b2d7a9-14ac-d30c-ca6c-5e29cb29260f.svg" align="current" width="" height="" style="" class="illustration img-responsive" alt=""/></li>
+<li>  以下の画面が表示されたら、無線LAN機器のアクセスポイントのWPSボタンを押します。<br/><img id="guid-fda91e33-4685-1d85-3e37-d0cd74c96e8f" src="img/guid-fda91e33-4685-1d85-3e37-d0cd74c96e8f.png" align="current" width="" height="" style="" class="illustration img-responsive" alt=""/></li>
+<li>アクセスポイントとの接続が確立されると、画面に［接続完了］と表示されます。</li>
+</ol>
+</div>
+<h3 title="">PIN表示方式で接続する場合</h3><div class="procedure" style=" notselect">
+<ol>
+<li>設定画面から［通信設定］&gt; ［ネットワーク］ &gt; ［Wi-Fi］ &gt; ［WPS］ &gt; ［PIN表示方式］をタップします。<br/><img id="guid-5f512ac7-fa5d-e762-eab4-82a1f28f18cb" src="img/guid-5f512ac7-fa5d-e762-eab4-82a1f28f18cb.svg" align="current" width="" height="" style="" class="illustration img-responsive" alt=""/></li>
+<li>以下の画面が表示されたら、画面に表示されたPINコードを設定して、無線LANまたはコンピュータのアクセスポイントにアクセスします。<br/><img id="guid-cabdcd04-4a8b-ff6a-4e4a-b3992b2e6ed2" src="img/guid-cabdcd04-4a8b-ff6a-4e4a-b3992b2e6ed2.png" align="current" width="" height="" style="" class="illustration img-responsive" alt=""/></li>
+<li>アクセスポイントとの接続が確立されると、画面に［接続完了］と表示されます。</li>
+</ol>
+</div>
+<h3 title=""><a class="anchor" id="wifidirect" name="wifidirect" title="wifidirect"></a>Wi-Fi Directを使用する</h3><div class="procedure" style=" notselect">
+<p class="blockstyle-00"><img id="guid-a582eccb-476d-c474-4c66-8e8a5434a251" src="img/guid-a582eccb-476d-c474-4c66-8e8a5434a251.png" align="current" width="" height="" style="" class="illustration img-responsive" alt=""/></p>
+<ol>
+<li><b>設定画面から［通信設定］&gt; ［ネットワーク］ &gt; ［Wi-Fi］ &gt; ［Wi-Fi Direct］をタップします。</b></li>
+<li>［デバイス名］に本製品のデバイス名を設定します。<br/><span class="font-weight-normal" id="">1～32文字で入力します。アルファベット（大文字および小文字）、数字、および記号を使用できます。</span></li>
+<li>［SSID］をタップし、接続できるデバイス名を検索し表示します。<br/>本製品がGO（グループオーナー）のときは接続要求を受け入れます。</li>
+<li>新しいグループを作成する場合やリストからグループを選択する場合は、［グループを開始］をタップします。</li>
+<li>本製品や接続する機器の画面表示に従って、接続を完了します。</li>
+<li>接続を終了する場合は、［切断］をタップします。</li>
+</ol>
+</div>
+<div class="information_box caution" style="notselect">
+<p class="blockstyle-00 information_icon"><img src="img/guid-e15d8970-3420-2ba4-05f4-05d8a53ba0c2.png" alt="" title="" class="iconImage img-responsive" style=" " id="guid-e15d8970-3420-2ba4-05f4-05d8a53ba0c2" align="current" width="" height=""/></p>
+<div class="information_list" style="notselect">
+<ul>
+<li>最大32台の機器を接続できます。</li>
+<li>Wi-Fi Directが有効な場合は、［デバイス名］を変更できません。</li>
+<li>［グループを開始］と［グループを削除］は、Wi-Fiが有効で、本製品がWi-Fi Directネットワークに接続していないときのみ表示されます。</li>
+<li>［グループを削除］は、Wi-Fiが有効で、本製品がWi-Fi接続している場合に表示されます。タップすると、グループが解除されます。</li>
+<li>グループを作成すると、本製品はGO（グループオーナー）に設定され、他の機器からの接続要求を待ちます。</li>
+<li>グループ接続中に本製品の電源を切った場合、本製品の電源を入れたあと、自動的にグループ接続します。</li>
+</ul>
+</div>
+</div>
+<div class="footnote">
+<br clear="all"/><ol/>
+</div>
+
+        </div><!-- /. PAGE INNER  -->
+        <div id="footer"><!--footer-->
+            <div class="container">
+                <div class="row">
+                        <span id="copyright" ></span>
+                </div><!--/row-->
+            </div><!--/container-->
+        </div><!--/footer-->
+    </div>
+</body>
+<script src="js/jquery-3.7.1.min.js"></script>
+<script>
+	var searchStrs = getParam('searchStrs');
+	if(searchStrs != null){
+		searchStrs = searchStrs.split('\\,').join('escapecanma');
+		searchStrs = searchStrs.split(',').join('splitStr');
+		searchStrs = searchStrs.split('escapecanma').join('\\,');
+		$("#page-inner").html(markingColor(searchStrs.split('splitStr'), $("#page-inner").html()))
+	}	resizebody();
+	var param = location.href.split('#')[1];
+	window.location.href = "#" + param;
+	$(window).resize(function () {
+			resizebody();
+	});
+	function resizebody(){
+		var currentWidth = window.innerWidth;
+			if(currentWidth > 768){
+				$("#page-inner").css("height",  $("#page-wrapper").height()-$("#footer").height()-20+ "px");
+			}else{
+				$("#page-inner").css("height",  $("#page-wrapper").height()-$("#footer").height()-20+ "px");
+			}
+	}
+
+ 	window.onload = onLoad;
+
+    function onLoad() {
+   		var filename = "guid-7ef6cebc-202b-ed19-33ea-1da392010fc1_guid-39adb746-d226-345c-7e18-f6c95ea5eeba_guid-ef8ea166-9e5a-d28c-99e6-09c970fbe92d_guid-57ad6281-aefb-b6dd-0316-d91612e9ae7f_guid-878aaeee-0e69-1a75-65fe-998c9c430f70";
+      	window.parent.postMessage(filename, "*");
+    }
+
+	function markingColor(target2, body){
+		if(!Array.isArray(target2)){
+			return body;
+		}
+		function hiraganaHenkan(searchTarget){
+			return searchTarget.replace(/[ア-ン]/g, function(s) {
+			   return String.fromCharCode(s.charCodeAt(0) - 0x60);
+			})
+		}
+		function katakanaHenkan(searchTarget){
+			return searchTarget.replace(/[あ-ん]/g, function(s) {
+			   return String.fromCharCode(s.charCodeAt(0) + 0x60);
+			})
+		}
+		//テキストのみを配列で取得
+		var nMarkerColor = 0;
+		var strMarkerColor = "";
+		for (var k = 0; k < target2.length; k++) {
+			var bodyStrArray = body.match(/(?<=>).*?(?=<)/g);
+			if(target2[k] != " "){
+				switch (nMarkerColor) {
+					case 0:
+						strMarkerColor = String.fromCharCode(0x2080);
+						break;
+					case 1:
+						strMarkerColor = String.fromCharCode(0x2081);
+						break;
+					case 2:
+						strMarkerColor = String.fromCharCode(0x2082);
+						break;
+					case 3:
+						strMarkerColor = String.fromCharCode(0x2083);
+						break;
+					case 4:
+						strMarkerColor = String.fromCharCode(0x2084);
+						break;
+				}
+
+				var searchTarget = hiraganaHenkan(target2[k]);
+				var targetRegexp = new RegExp(searchTarget,'gi');
+				var searchBody =  hiraganaHenkan(body);
+				var matchList = searchBody.match(targetRegexp);
+				var nonDuplicationlist = matchList.filter(function (x, i, self) {
+					return self.indexOf(x) === i;
+			    });
+				for (var t of nonDuplicationlist) {
+					for(var bodyStr of bodyStrArray){
+						try{
+							if(bodyStr.includes(t)){
+								//テキストに検索文字が入っている場合、テキストの検索文字をハイライト表示に変換してからbodyを置換する
+								var newbodyStr = bodyStr.replaceAll(t,strMarkerColor +  t + String.fromCharCode(0x2085));
+								var regex = new RegExp("(?<=>)" + replaceRegularExpressions(bodyStr) + "(?=<)");
+								body = body.replace(regex, newbodyStr);
+							}
+							var katakana =  katakanaHenkan(t);
+							if(bodyStr.includes(katakana)){
+								//テキストに検索文字のひらがなが入っている場合、テキストの検索文字をハイライト表示に変換してからbodyを置換する
+								var newbodyStr = bodyStr.replaceAll(katakana,strMarkerColor +  katakana + String.fromCharCode(0x2085));
+								var regex = new RegExp("(?<=>)" + replaceRegularExpressions(bodyStr) + "(?=<)");
+								body = body.replace(regex, newbodyStr);
+							}
+						} catch (error) {
+							console.error(error);
+						}
+					}
+				}
+
+
+				nMarkerColor++;
+				if(nMarkerColor > 4){
+					nMarkerColor = 0;
+				}
+
+
+			}
+		}
+		body = body.replace(/\u2080/g, "<span class=\"backA\">");
+		body = body.replace(/\u2081/g, "<span class=\"backB\">");
+		body = body.replace(/\u2082/g, "<span class=\"backC\">");
+		body = body.replace(/\u2083/g, "<span class=\"backD\">");
+		body = body.replace(/\u2084/g, "<span class=\"backE\">");
+		body = body.replace(/\u2085/g, "</span>");
+		return body;
+	}
+	function getParam(name, url) {
+	    if (!url) url = window.location.href;
+	    name = name.replace(/[\[\]]/g, "\\$&");
+	    var regex = new RegExp("[?&]" + name + "(=([^&#]*)|&|#|$)"),
+	        results = regex.exec(url);
+	    if (!results) return null;
+	    if (!results[2]) return '';
+	    return decodeURIComponent(results[2].replace(/\+/g, " "));
+	}
+	function replaceRegularExpressions(targetStr){
+		targetStr = targetStr.replace(/\*/g, "\\*");
+		targetStr = targetStr.replace(/\+/g, "\\+");
+		targetStr = targetStr.replace(/\./g, "\\.");
+		targetStr = targetStr.replace(/\?/g, "\\?");
+		targetStr = targetStr.replace(/\{/g, "\\{");
+		targetStr = targetStr.replace(/\}/g, "\\}");
+		targetStr = targetStr.replace(/\(/g, "\\(");
+		targetStr = targetStr.replace(/\)/g, "\\)");
+		targetStr = targetStr.replace(/\[/g, "\\[");
+		targetStr = targetStr.replace(/\]/g, "\\]");
+		targetStr = targetStr.replace(/\^/g, "\\^");
+		targetStr = targetStr.replace(/\$/g, "\\$");
+		targetStr = targetStr.replace(/\-/g, "\\-");
+		targetStr = targetStr.replace(/\|/g, "\\|");
+		targetStr = targetStr.replace(/\//g, "\\/");
+		return targetStr;
+	}
+</script>
+</html>

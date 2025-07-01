@@ -1,0 +1,237 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+      <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>RFID関連情報の確認</title>
+    <!-- BOOTSTRAP STYLES-->
+    <link href="css/bootstrap.css?exportDate=20250613" rel="stylesheet" />
+     <!-- FONTAWESOME STYLES-->
+    <link href="css/font-awesome.css?exportDate=20250613" rel="stylesheet" />
+        <!-- CUSTOM STYLES-->
+    <link href="css/custom.css?exportDate=20250613" rel="stylesheet" />
+    <!-- COPYRIGHT STYLES-->
+    <link href="css/copyright.css?exportDate=20250613" rel="stylesheet" />
+    
+     <!-- GOOGLE FONTS-->
+   <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css' />
+   <script>window.MathJax = { MathML: { extensions: ["mml3.js", "content-mathml.js"]}};</script>
+   <script type="text/javascript" async src="https://www.cybertech.co.jp/support/pmxlib/js/MathJax-2.6/MathJax.js?config=MML_HTMLorMML&exportDate=20250613"></script>
+    <link rel="stylesheet" href="css/user_custom1.css" />
+
+    
+</head>
+<body style="overflow-y: hidden;">
+    <div id="page-wrapper">
+        <div id="page-inner">
+            		<div class="row">
+            <div class="col-md-12">
+                <h2 class="title"><span class"pmx-topic-title">RFID関連情報の確認</span></h2>
+            </div>
+        </div>
+        <!-- /. ROW  -->
+        <hr />                    <p class="blockstyle-00"><b><a class="anchor" id="readermodel" name="readermodel" title="readermodel"></a>［RFID］ &gt; ［リーダー形式］</b></p>
+<p class="blockstyle-00"><img id="guid-2cc4f1d8-85f6-ef6e-67b7-a4130468c77e" src="img/guid-2cc4f1d8-85f6-ef6e-67b7-a4130468c77e.png" align="current" width="" height="" style="" class="illustration img-responsive" alt=""/></p>
+<p class="blockstyle-00">RFIDモジュールの型式を表示します。</p>
+<p class="blockstyle-00"> </p>
+<p class="blockstyle-00"><b><a class="anchor" id="readerversion" name="readerversion" title="readerversion"></a>［RFID］ &gt; ［リーダーバージョン］</b></p>
+<p class="blockstyle-00"><img id="guid-07476722-09f1-af52-7163-8a02743aec32" src="img/guid-07476722-09f1-af52-7163-8a02743aec32.png" align="current" width="" height="" style="" class="illustration img-responsive" alt=""/></p>
+<p class="blockstyle-00">RFIDモジュールのファームウェアバージョンを表示します。</p>
+<p class="blockstyle-00"> </p>
+<p class="blockstyle-00"><b><a class="anchor" id="counter" name="counter" title="counter"></a>［RFID］ &gt; ［カウンタ］</b></p>
+<p class="blockstyle-00"><img id="guid-25b6b5e3-8ce4-3f1f-6c16-8c8842040aa4" src="img/guid-25b6b5e3-8ce4-3f1f-6c16-8c8842040aa4.png" align="current" width="" height="" style="" class="illustration img-responsive" alt=""/></p>
+<p class="blockstyle-00">以下のコマンドによるRFID書込み動作の回数が表示されます。</p>
+<ul>
+<li>RFID書込み：EPCコードライト指定&lt;IP0&gt;、RFIDライト指定&lt;RK&gt;</li>
+<li>タグデータ印字：UID/EPC/IDm印字指定&lt;TU&gt;</li>
+</ul>
+<p class="blockstyle-00"> ただし、印字や用紙搬送を伴わない書込みはカウントされません。</p>
+<p class="blockstyle-00"> </p>
+<p class="blockstyle-00"><b>［総計］</b></p>
+<p class="blockstyle-00">RFID書込み動作の以下の回数が表示されます。</p>
+<ul>
+<li><p class="blockstyle-00">［正常発行枚数］<br/>RFIDタグへの書込みが成功した回数が表示されます。</p>
+</li>
+<li><p class="blockstyle-00">［異常発行枚数］<br/>RFIDタグへの書込みがエラーになった回数が表示されます。</p>
+</li>
+<li><p class="blockstyle-00">［印字発行枚数］<br/>印字されたRFIDタグの総数が表示されます。<br/>これは、［正常発行枚数］と［異常発行枚数］の合計数です。</p>
+</li>
+</ul>
+<p class="blockstyle-00"> </p>
+<p class="blockstyle-00"><b>［ユーザカウンタ］</b></p>
+<p class="blockstyle-00">カウンタをクリアしたあとの、RFID書込み動作の以下の回数が表示されます。</p>
+<ul>
+<li><p class="blockstyle-00">［正常発行枚数］<br/>RFIDタグへの書込みが成功した回数が表示されます。</p>
+</li>
+<li><p class="blockstyle-00">［異常発行枚数］<br/>RFIDタグへの書込みがエラーになった回数が表示されます。</p>
+</li>
+<li><p class="blockstyle-00">［印字発行枚数］<br/>印字されたRFIDタグの総数が表示されます。<br/>これは、［正常発行枚数］と［異常発行枚数］の合計数です。</p>
+</li>
+</ul>
+<div class="information_box caution" style="notselect">
+<p class="blockstyle-00 information_icon"><img src="img/guid-60931d60-0a5d-b67c-40a7-e3234eaa9ff9.png" alt="" title="" class="iconImage img-responsive" style=" " id="guid-60931d60-0a5d-b67c-40a7-e3234eaa9ff9" align="current" width="" height=""/></p>
+<div class="information_list" style="notselect">
+<ul>
+<li>カウンタが1以上の場合は［クリア］をタップしてカウンタをリセットできます。</li>
+</ul>
+</div>
+</div>
+<p class="blockstyle-00"> </p>
+<p class="blockstyle-00"> </p>
+<div class="footnote">
+<br clear="all"/><ol/>
+</div>
+
+        </div><!-- /. PAGE INNER  -->
+        <div id="footer"><!--footer-->
+            <div class="container">
+                <div class="row">
+                        <span id="copyright" ></span>
+                </div><!--/row-->
+            </div><!--/container-->
+        </div><!--/footer-->
+    </div>
+</body>
+<script src="js/jquery-3.7.1.min.js"></script>
+<script>
+	var searchStrs = getParam('searchStrs');
+	if(searchStrs != null){
+		searchStrs = searchStrs.split('\\,').join('escapecanma');
+		searchStrs = searchStrs.split(',').join('splitStr');
+		searchStrs = searchStrs.split('escapecanma').join('\\,');
+		$("#page-inner").html(markingColor(searchStrs.split('splitStr'), $("#page-inner").html()))
+	}	resizebody();
+	var param = location.href.split('#')[1];
+	window.location.href = "#" + param;
+	$(window).resize(function () {
+			resizebody();
+	});
+	function resizebody(){
+		var currentWidth = window.innerWidth;
+			if(currentWidth > 768){
+				$("#page-inner").css("height",  $("#page-wrapper").height()-$("#footer").height()-20+ "px");
+			}else{
+				$("#page-inner").css("height",  $("#page-wrapper").height()-$("#footer").height()-20+ "px");
+			}
+	}
+
+ 	window.onload = onLoad;
+
+    function onLoad() {
+   		var filename = "guid-7ef6cebc-202b-ed19-33ea-1da392010fc1_guid-39adb746-d226-345c-7e18-f6c95ea5eeba_guid-dae01b84-4874-d148-0d43-f3d5198bac82_guid-b2800e26-1a81-c915-70d0-61eaad3ec484_guid-4e4476bc-9b80-641e-62a1-7ed9e221a98c";
+      	window.parent.postMessage(filename, "*");
+    }
+
+	function markingColor(target2, body){
+		if(!Array.isArray(target2)){
+			return body;
+		}
+		function hiraganaHenkan(searchTarget){
+			return searchTarget.replace(/[ア-ン]/g, function(s) {
+			   return String.fromCharCode(s.charCodeAt(0) - 0x60);
+			})
+		}
+		function katakanaHenkan(searchTarget){
+			return searchTarget.replace(/[あ-ん]/g, function(s) {
+			   return String.fromCharCode(s.charCodeAt(0) + 0x60);
+			})
+		}
+		//テキストのみを配列で取得
+		var nMarkerColor = 0;
+		var strMarkerColor = "";
+		for (var k = 0; k < target2.length; k++) {
+			var bodyStrArray = body.match(/(?<=>).*?(?=<)/g);
+			if(target2[k] != " "){
+				switch (nMarkerColor) {
+					case 0:
+						strMarkerColor = String.fromCharCode(0x2080);
+						break;
+					case 1:
+						strMarkerColor = String.fromCharCode(0x2081);
+						break;
+					case 2:
+						strMarkerColor = String.fromCharCode(0x2082);
+						break;
+					case 3:
+						strMarkerColor = String.fromCharCode(0x2083);
+						break;
+					case 4:
+						strMarkerColor = String.fromCharCode(0x2084);
+						break;
+				}
+
+				var searchTarget = hiraganaHenkan(target2[k]);
+				var targetRegexp = new RegExp(searchTarget,'gi');
+				var searchBody =  hiraganaHenkan(body);
+				var matchList = searchBody.match(targetRegexp);
+				var nonDuplicationlist = matchList.filter(function (x, i, self) {
+					return self.indexOf(x) === i;
+			    });
+				for (var t of nonDuplicationlist) {
+					for(var bodyStr of bodyStrArray){
+						try{
+							if(bodyStr.includes(t)){
+								//テキストに検索文字が入っている場合、テキストの検索文字をハイライト表示に変換してからbodyを置換する
+								var newbodyStr = bodyStr.replaceAll(t,strMarkerColor +  t + String.fromCharCode(0x2085));
+								var regex = new RegExp("(?<=>)" + replaceRegularExpressions(bodyStr) + "(?=<)");
+								body = body.replace(regex, newbodyStr);
+							}
+							var katakana =  katakanaHenkan(t);
+							if(bodyStr.includes(katakana)){
+								//テキストに検索文字のひらがなが入っている場合、テキストの検索文字をハイライト表示に変換してからbodyを置換する
+								var newbodyStr = bodyStr.replaceAll(katakana,strMarkerColor +  katakana + String.fromCharCode(0x2085));
+								var regex = new RegExp("(?<=>)" + replaceRegularExpressions(bodyStr) + "(?=<)");
+								body = body.replace(regex, newbodyStr);
+							}
+						} catch (error) {
+							console.error(error);
+						}
+					}
+				}
+
+
+				nMarkerColor++;
+				if(nMarkerColor > 4){
+					nMarkerColor = 0;
+				}
+
+
+			}
+		}
+		body = body.replace(/\u2080/g, "<span class=\"backA\">");
+		body = body.replace(/\u2081/g, "<span class=\"backB\">");
+		body = body.replace(/\u2082/g, "<span class=\"backC\">");
+		body = body.replace(/\u2083/g, "<span class=\"backD\">");
+		body = body.replace(/\u2084/g, "<span class=\"backE\">");
+		body = body.replace(/\u2085/g, "</span>");
+		return body;
+	}
+	function getParam(name, url) {
+	    if (!url) url = window.location.href;
+	    name = name.replace(/[\[\]]/g, "\\$&");
+	    var regex = new RegExp("[?&]" + name + "(=([^&#]*)|&|#|$)"),
+	        results = regex.exec(url);
+	    if (!results) return null;
+	    if (!results[2]) return '';
+	    return decodeURIComponent(results[2].replace(/\+/g, " "));
+	}
+	function replaceRegularExpressions(targetStr){
+		targetStr = targetStr.replace(/\*/g, "\\*");
+		targetStr = targetStr.replace(/\+/g, "\\+");
+		targetStr = targetStr.replace(/\./g, "\\.");
+		targetStr = targetStr.replace(/\?/g, "\\?");
+		targetStr = targetStr.replace(/\{/g, "\\{");
+		targetStr = targetStr.replace(/\}/g, "\\}");
+		targetStr = targetStr.replace(/\(/g, "\\(");
+		targetStr = targetStr.replace(/\)/g, "\\)");
+		targetStr = targetStr.replace(/\[/g, "\\[");
+		targetStr = targetStr.replace(/\]/g, "\\]");
+		targetStr = targetStr.replace(/\^/g, "\\^");
+		targetStr = targetStr.replace(/\$/g, "\\$");
+		targetStr = targetStr.replace(/\-/g, "\\-");
+		targetStr = targetStr.replace(/\|/g, "\\|");
+		targetStr = targetStr.replace(/\//g, "\\/");
+		return targetStr;
+	}
+</script>
+</html>
