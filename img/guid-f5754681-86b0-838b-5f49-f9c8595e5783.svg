@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 26.3.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="replaceCutter" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
+	 y="0px" width="44px" height="44px" viewBox="0 0 44 44" style="enable-background:new 0 0 44 44;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:none;}
+	.st1{fill:#54575E;}
+	.st2{fill:#E54C41;}
+</style>
+<rect id="rect" x="2" y="2" class="st0" width="40" height="40"/>
+<path id="path" class="st1" d="M4.5,6.2v3.2h3.4v17.1c0,0.9,0.7,1.6,1.6,1.6l0,0c0.1,0,0.2,0,0.3,0L25.5,25v-3.2l-14.4,2.8v-4.2
+	L33.6,16V9.4H37V6.2H4.5z M30.4,13.4l-19.3,3.7V9.4h19.2L30.4,13.4L30.4,13.4z"/>
+<path id="path-error" class="st2" d="M42,27.2v3h-2.8v-3c0-2-1.6-3.6-3.6-3.6h-2V27l-6-4.7l6-4.8v3.4h2C39.1,20.9,42,23.7,42,27.2
+	 M33.9,34.6h-2c-2,0-3.6-1.6-3.6-3.6v-3h-2.8v3c0,3.5,2.9,6.4,6.4,6.4h2v3.4l6-4.7l-6-4.8V34.6z"/>
+</svg>
